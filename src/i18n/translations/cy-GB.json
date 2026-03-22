@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "badge": "Dosrannu Datganiadau Banc gyda Phreifatrwydd yn Gyntaf",
+    "headline1": "Dosrannwch Unrhyw Ddatganiad Banc",
+    "headline2": "Mewn Unrhyw Iaith",
+    "subheadline": "120+ o fanciau. 11 fformat. 68 iaith. 70+ arian cyfred. Un SDK. Dim gwasanaethau allanol. 100% all-lein.",
+    "cta": "Cael StatementKit — {price}",
+    "ctaSecondary": "Gweld ar GitHub",
+    "installComment": "# Gosod",
+    "callout": "Pryniant unwaith — dim tanysgrifiadau, dim ffioedd fesul galwad API"
+  },
+  "comparison": {
+    "heading": "Pam Nid Plaid?",
+    "subtitle": "Mae API agregu yn costio $30-200K/y flwyddyn, yn gofyn am gysylltedd cwmwl, ac yn anfon data eich defnyddwyr i weinyddion trydydd parti. Mae StatementKit yn rhedeg yn gyfan gwbl ar eich seilwaith chi.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/blwyddyn", "Dibynnol ar y cwmwl", "Data defnyddwyr yn cael ei anfon i drydydd parti", "Prisio fesul cysylltiad", "Terfynau cyfradd API"],
+    "ossTitle": "Dosrannwyr Cod Agored",
+    "ossItems": ["Am ddim", "1 fformat yr un", "Saesneg yn unig", "1-5 banc", "Dim cynnal a chadw"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 unwaith", "11 fformat, 120+ o fanciau", "68 iaith, 70+ arian cyfred", "100% all-lein, sero galwadau API", "Yn cael ei gynnal yn weithredol"]
+  },
+  "formats": {
+    "heading": "11 Fformat. Un API.",
+    "items": {"csv": "120+ ffurfweddiad banc", "ofx": "1.x SGML + 2.x XML", "pdf": "Testun + OCR (68 iaith)", "qif": "Quicken Interchange", "mt940": "Datganiadau SWIFT", "camt": "ISO 20022 (052/053/054)"}
+  },
+  "features": {
+    "heading": "Popeth Sydd ei Angen Arnoch",
+    "items": [
+      {"title": "120+ o Fanciau", "desc": "Wedi'i ffurfweddu ymlaen llaw ar gyfer banciau ledled Gogledd America, yr UE, y DU, Awstralia ac Asia. Ychwanegwch eich un chi ar amser rhedeg."},
+      {"title": "100% All-lein", "desc": "Sero galwadau rhwydwaith. Dim allweddi API. Dim cwmwl. Nid yw data byth yn gadael y ddyfais."},
+      {"title": "68 Iaith", "desc": "OCR + dosrannu dyddiadau yn Almaeneg, Ffrangeg, Japaneeg, Arabeg, Hindi, Thai a mwy. 70+ arian cyfred."},
+      {"title": "OCR Derbynebau", "desc": "Echdynnwch fasnachwr, cyfanswm, treth, cildwrn ac eitemau llinell o luniau derbynebau."},
+      {"title": "Allforio Fformatau", "desc": "Trosi rhwng CSV, OFX, QIF, JSON. Dosrannwch unrhyw fformat, allforiwch i unrhyw un arall."},
+      {"title": "Teclyn CLI", "desc": "npx statementkit parse statement.csv — dosrannu di-ben ar gyfer CI/sgriptiau."}
+    ]
+  },
+  "codeExamples": {"heading": "API Syml"},
+  "pricing": {
+    "heading": "Un Pris. Mynediad Oes.",
+    "subtitle": "Dim tanysgrifiadau. Dim ffioedd fesul galwad API. Dim cloi i mewn gyda gwerthwr.",
+    "price": "$79",
+    "priceLabel": "taliad unwaith",
+    "items": ["Cod ffynhonnell llawn (TypeScript)", "120+ ffurfweddiad banc ar draws 6 rhanbarth", "11 fformat mewnbwn + 4 fformat allforio", "PDF OCR (68 iaith)", "OCR lluniau derbynebau", "Teclyn CLI + mewnforio swp", "Rhyngwyneb darparwr AI (BYOK)", "432 prawf yn pasio", "Diweddariadau oes trwy GitHub", "Trwydded MIT — defnyddiwch mewn unrhyw brosiect"],
+    "cta": "Prynwch StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Cwestiynau Cyffredin",
+    "items": [
+      {"q": "Beth ydw i'n ei gael?", "a": "Cod ffynhonnell TypeScript llawn wedi'i ddarparu trwy fynediad i storfa GitHub. 120+ dosrannwr banc, 11 trinwr fformat, PDF OCR, teclyn CLI a rhyngwyneb darparwr AI. Trwydded MIT — defnyddiwch mewn unrhyw brosiect, masnachol neu bersonol."},
+      {"q": "Sut mae dosrannu all-lein yn gweithio?", "a": "Mae'r holl ddosrannu yn rhedeg yn lleol — nid oes angen unrhyw alwadau rhwydwaith ar gyfer dosrannu CSV, OFX, QIF, MT940 a CAMT. Mae PDF OCR yn defnyddio Tesseract.js sy'n rhedeg yn y porwr neu Node.js. Nid yw unrhyw ddata byth yn gadael eich seilwaith."},
+      {"q": "Alla i ychwanegu fy manc fy hun?", "a": "Gallwch. Defnyddiwch registerBank() ar amser rhedeg, llwythwch o ffeiliau ffurfweddu JSON, neu defnyddiwch y gorchymyn CLI config suggest i ganfod colofnau'n awtomatig o CSV sampl."},
+      {"q": "Beth am nodweddion AI?", "a": "Mae AI yn 100% dewisol. Mae'r holl ddosrannu yn gweithio hebddo. Os ydych am ganfod dyblygu deallus neu gyfoethogi masnachwyr, dewch â'ch allwedd API eich hun (OpenAI, Anthropic, neu unrhyw LLM) trwy'r rhyngwyneb AIProvider."},
+      {"q": "A oes treial am ddim?", "a": "Mae'r dosrannwyr craidd ar gael fel pecyn npm cod agored. Mae'r fersiwn Pro ($79) yn ychwanegu PDF OCR, cefnogaeth CAMT/MT940, teclyn CLI, rhyngwyneb AI a ffurfweddiadau banc blaenoriaethol."}
+    ]
+  },
+  "footer": {"builtBy": "Adeiladwyd gan"},
+  "languageSelector": {"label": "Cyfieithiadau wedi'u hadeiladu gyda", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Mewnbwn", "parsed": "Wedi'i ddosrannu", "languages": "68 iaith"}
+}

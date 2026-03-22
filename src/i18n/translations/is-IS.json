@@ -1,0 +1,88 @@
+{
+  "hero": {
+    "badge": "Persónuverndarmiðuð bankayfirlitsgreining",
+    "headline1": "Greindu hvaða bankayfilit sem er",
+    "headline2": "Á hvaða tungumáli sem er",
+    "subheadline": "120+ bankar. 11 snið. 68 tungumál. 70+ gjaldmiðlar. Eitt SDK. Engar ytri þjónustur. 100% ótengdur.",
+    "cta": "Fáðu StatementKit — {price}",
+    "ctaSecondary": "Skoða á GitHub",
+    "installComment": "# Uppsetning",
+    "callout": "Eingreiðsla — engin áskrift, engin gjöld á hvert API-kall"
+  },
+  "comparison": {
+    "heading": "Af hverju ekki Plaid?",
+    "subtitle": "Safnara API-þjónustur kosta $30-200K/ári, krefjast nettengingar og senda gögn notenda þinna á þriðja aðila netþjóna. StatementKit keyrir alfarið á þínum innviðum.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/ári", "Skýjaháð", "Notendagögn send þriðja aðila", "Verð á hverja tengingu", "API-hraðatakmarkanir"],
+    "ossTitle": "Opinn hugbúnaður greinir",
+    "ossItems": ["Ókeypis", "1 snið hvert", "Aðeins enska", "1-5 bankar", "Ekkert viðhald"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 eingreiðsla", "11 snið, 120+ bankar", "68 tungumál, 70+ gjaldmiðlar", "100% ótengdur, engin API-köll", "Virkt viðhaldið"]
+  },
+  "formats": {
+    "heading": "11 snið. Eitt API.",
+    "items": {
+      "csv": "120+ bankastillingar",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "Texti + OCR (68 tungumál)",
+      "qif": "Quicken Interchange",
+      "mt940": "SWIFT yfirlit",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "Allt sem þú þarft",
+    "items": [
+      {"title": "120+ bankar", "desc": "Forstillt fyrir banka í NA, ESB, Bretlandi, Ástralíu og Asíu. Bættu þínum eigin við á keyrslutíma."},
+      {"title": "100% ótengdur", "desc": "Engin netköll. Engir API-lyklar. Ekkert ský. Gögn fara aldrei af tækinu."},
+      {"title": "68 tungumál", "desc": "OCR + dagsetningargreining á þýsku, frönsku, japönsku, arabísku, hindí, taílensku og fleira. 70+ gjaldmiðlar."},
+      {"title": "Kvittana OCR", "desc": "Dragðu út söluaðila, heildarupphæð, skatt, þjórfé og línuatriði úr kvittanamyndum."},
+      {"title": "Sniðaútflutningur", "desc": "Umbreyttu milli CSV, OFX, QIF, JSON. Greindu hvaða snið sem er, fluttu út í annað."},
+      {"title": "CLI-verkfæri", "desc": "npx statementkit parse statement.csv — höfuðlaus greining fyrir CI/forskriftir."}
+    ]
+  },
+  "codeExamples": {
+    "heading": "Einfalt API"
+  },
+  "pricing": {
+    "heading": "Eitt verð. Lífstíðaraðgangur.",
+    "subtitle": "Engin áskrift. Engin gjöld á hvert API-kall. Enginn seljandainnilokun.",
+    "price": "$79",
+    "priceLabel": "eingreiðsla",
+    "items": [
+      "Fullur frumkóði (TypeScript)",
+      "120+ bankastillingar á 6 svæðum",
+      "11 inntakssnið + 4 útflutningssnið",
+      "PDF OCR (68 tungumál)",
+      "Kvittanamynd OCR",
+      "CLI-verkfæri + hópinnflutningur",
+      "AI-veituviðmót (BYOK)",
+      "432 prófanir standast",
+      "Lífstíðaruppfærslur í gegnum GitHub",
+      "MIT leyfi — notaðu í hvaða verkefni sem er"
+    ],
+    "cta": "Kauptu StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Algengar spurningar",
+    "items": [
+      {"q": "Hvað fæ ég?", "a": "Fullur TypeScript frumkóði afhentur með GitHub repo aðgangi. 120+ bankagreinir, 11 sniðmeðhöndlarar, PDF OCR, CLI-verkfæri og AI-veituviðmót. MIT leyfi — notaðu í hvaða verkefni sem er, viðskiptalegt eða persónulegt."},
+      {"q": "Hvernig virkar ótengd greining?", "a": "Öll greining keyrir staðbundið — CSV, OFX, QIF, MT940 og CAMT greining þarf engin netköll. PDF OCR notar Tesseract.js sem keyrir í vafra eða Node.js. Engin gögn fara nokkurn tíma af þínum innviðum."},
+      {"q": "Get ég bætt við mínum eigin banka?", "a": "Já. Notaðu registerBank() á keyrslutíma, hladdu úr JSON stillingarskrám eða notaðu CLI config suggest skipunina til að skynja dálka sjálfkrafa úr sýni CSV."},
+      {"q": "Hvað um AI-eiginleika?", "a": "AI er 100% valfrjálst. Öll greining virkar án þess. Ef þú vilt snjalla tvítekningargreiningu eða söluaðilaauðgun, komdu með þinn eigin API-lykil (OpenAI, Anthropic eða hvaða LLM sem er) í gegnum AIProvider viðmótið."},
+      {"q": "Er ókeypis prufuútgáfa?", "a": "Kjarnagreinirnir eru fáanlegir sem opinn hugbúnaður npm-pakki. Pro útgáfan ($79) bætir við PDF OCR, CAMT/MT940 stuðningi, CLI-verkfæri, AI-viðmóti og forgangs bankastillingum."}
+    ]
+  },
+  "footer": {
+    "builtBy": "Smíðað af"
+  },
+  "languageSelector": {
+    "label": "Þýðingar gerðar með",
+    "polyglotLink": "Polyglot Kit"
+  },
+  "demo": {
+    "input": "Inntak",
+    "parsed": "Greint",
+    "languages": "68 tungumál"
+  }
+}

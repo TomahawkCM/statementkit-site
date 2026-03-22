@@ -1,0 +1,88 @@
+{
+  "hero": {
+    "badge": "Privātumam draudzīga bankas izrakstu parsēšana",
+    "headline1": "Parsējiet jebkuru bankas izrakstu",
+    "headline2": "Jebkurā valodā",
+    "subheadline": "120+ bankas. 11 formāti. 68 valodas. 70+ valūtas. Viens SDK. Nulle ārējo pakalpojumu. 100% bezsaistē.",
+    "cta": "Iegūstiet StatementKit — {price}",
+    "ctaSecondary": "Skatīt GitHub",
+    "installComment": "# Instalēšana",
+    "callout": "Vienreizējs pirkums — bez abonementiem, bez maksas par API izsaukumu"
+  },
+  "comparison": {
+    "heading": "Kāpēc ne Plaid?",
+    "subtitle": "Agregātoru API izmaksā $30-200K/gadā, prasa mākoņa savienojumu un nosūta jūsu lietotāju datus trešo pušu serveriem. StatementKit pilnībā darbojas jūsu infrastruktūrā.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/gadā", "Atkarīgs no mākoņa", "Lietotāju dati sūtīti trešajai pusei", "Cena par savienojumu", "API ātruma ierobežojumi"],
+    "ossTitle": "Atvērtā koda parseri",
+    "ossItems": ["Bezmaksas", "Katrs 1 formāts", "Tikai angliski", "1-5 bankas", "Nav uzturēšanas"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 vienreizēji", "11 formāti, 120+ bankas", "68 valodas, 70+ valūtas", "100% bezsaistē, nulle API izsaukumu", "Aktīvi uzturēts"]
+  },
+  "formats": {
+    "heading": "11 formāti. Viens API.",
+    "items": {
+      "csv": "120+ banku konfigurācijas",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "Teksts + OCR (68 valodas)",
+      "qif": "Quicken Interchange",
+      "mt940": "SWIFT izraksti",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "Viss, kas jums nepieciešams",
+    "items": [
+      {"title": "120+ bankas", "desc": "Iepriekš konfigurētas bankām Ziemeļamerikā, ES, Lielbritānijā, Austrālijā un Āzijā. Pievienojiet savas izpildes laikā."},
+      {"title": "100% bezsaistē", "desc": "Nulle tīkla izsaukumu. Nav API atslēgu. Nav mākoņa. Dati nekad neatstāj ierīci."},
+      {"title": "68 valodas", "desc": "OCR + datumu parsēšana vācu, franču, japāņu, arābu, hindi, taju un citās valodās. 70+ valūtas."},
+      {"title": "Čeku OCR", "desc": "Izvelciet tirgotāju, kopsummu, nodokļus, dzeramnaudu un rindas vienumus no čeku fotogrāfijām."},
+      {"title": "Formātu eksports", "desc": "Konvertējiet starp CSV, OFX, QIF, JSON. Parsējiet jebkuru formātu, eksportējiet uz jebkuru citu."},
+      {"title": "CLI rīks", "desc": "npx statementkit parse statement.csv — parsēšana bez saskarnes CI/skriptiem."}
+    ]
+  },
+  "codeExamples": {
+    "heading": "Vienkārša API"
+  },
+  "pricing": {
+    "heading": "Viena cena. Piekļuve mūža garumā.",
+    "subtitle": "Bez abonementiem. Bez maksas par API izsaukumu. Bez piegādātāja ieslēgšanas.",
+    "price": "$79",
+    "priceLabel": "vienreizējs maksājums",
+    "items": [
+      "Pilns avota kods (TypeScript)",
+      "120+ banku konfigurācijas 6 reģionos",
+      "11 ievades formāti + 4 eksporta formāti",
+      "PDF OCR (68 valodas)",
+      "Čeku fotogrāfiju OCR",
+      "CLI rīks + pakešu imports",
+      "AI nodrošinātāja saskarne (BYOK)",
+      "432 testi nokārtoti",
+      "Mūža atjauninājumi caur GitHub",
+      "MIT licence — izmantojiet jebkurā projektā"
+    ],
+    "cta": "Pirkt StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Bieži uzdotie jautājumi",
+    "items": [
+      {"q": "Ko es saņemu?", "a": "Pilns TypeScript avota kods, piegādāts ar GitHub repozitorija piekļuvi. 120+ banku parseri, 11 formātu apstrādātāji, PDF OCR, CLI rīks un AI nodrošinātāja saskarne. MIT licence — izmantojiet jebkurā projektā, komerciālā vai personīgā."},
+      {"q": "Kā darbojas parsēšana bezsaistē?", "a": "Visa parsēšana notiek lokāli — CSV, OFX, QIF, MT940 un CAMT parsēšanai nav nepieciešami tīkla izsaukumi. PDF OCR izmanto Tesseract.js, kas darbojas pārlūkprogrammā vai Node.js. Dati nekad neatstāj jūsu infrastruktūru."},
+      {"q": "Vai varu pievienot savu banku?", "a": "Jā. Izmantojiet registerBank() izpildes laikā, ielādējiet no JSON konfigurācijas failiem vai izmantojiet CLI config suggest komandu automātiskai kolonnu noteikšanai no parauga CSV."},
+      {"q": "Kā ar AI funkcijām?", "a": "AI ir 100% neobligāts. Visa parsēšana darbojas bez tā. Ja vēlaties gudru dublikātu noteikšanu vai tirgotāja datu bagātināšanu, atnesiet savu API atslēgu (OpenAI, Anthropic vai jebkuru LLM) caur AIProvider saskarni."},
+      {"q": "Vai ir bezmaksas izmēģinājums?", "a": "Pamata parseri ir pieejami kā atvērtā koda npm pakete. Pro versija ($79) pievieno PDF OCR, CAMT/MT940 atbalstu, CLI rīku, AI saskarni un prioritāras banku konfigurācijas."}
+    ]
+  },
+  "footer": {
+    "builtBy": "Izveidoja"
+  },
+  "languageSelector": {
+    "label": "Tulkojumi veidoti ar",
+    "polyglotLink": "Polyglot Kit"
+  },
+  "demo": {
+    "input": "Ievade",
+    "parsed": "Parsēts",
+    "languages": "68 valodas"
+  }
+}

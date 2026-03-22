@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "badge": "Phân tích sao kê ngân hàng ưu tiên quyền riêng tư",
+    "headline1": "Phân tích bất kỳ sao kê ngân hàng nào",
+    "headline2": "Bằng bất kỳ ngôn ngữ nào",
+    "subheadline": "120+ ngân hàng. 11 định dạng. 68 ngôn ngữ. 70+ loại tiền tệ. Một SDK. Không dịch vụ bên ngoài. 100% ngoại tuyến.",
+    "cta": "Nhận StatementKit — {price}",
+    "ctaSecondary": "Xem trên GitHub",
+    "installComment": "# Cài đặt",
+    "callout": "Thanh toán một lần — không đăng ký, không phí theo lượt gọi API"
+  },
+  "comparison": {
+    "heading": "Tại sao không dùng Plaid?",
+    "subtitle": "Các API tổng hợp có giá $30-200K/năm, yêu cầu kết nối đám mây và gửi dữ liệu người dùng đến máy chủ bên thứ ba. StatementKit chạy hoàn toàn trên hạ tầng của bạn.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/năm", "Phụ thuộc đám mây", "Dữ liệu người dùng gửi cho bên thứ ba", "Giá theo kết nối", "Giới hạn tốc độ API"],
+    "ossTitle": "Bộ phân tích Open-Source",
+    "ossItems": ["Miễn phí", "Mỗi cái 1 định dạng", "Chỉ tiếng Anh", "1-5 ngân hàng", "Không bảo trì"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 một lần", "11 định dạng, 120+ ngân hàng", "68 ngôn ngữ, 70+ loại tiền tệ", "100% ngoại tuyến, không gọi API", "Được bảo trì tích cực"]
+  },
+  "formats": {
+    "heading": "11 định dạng. Một API.",
+    "items": {
+      "csv": "120+ cấu hình ngân hàng",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "Văn bản + OCR (68 ngôn ngữ)",
+      "qif": "Quicken Interchange",
+      "mt940": "Sao kê SWIFT",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "Mọi thứ bạn cần",
+    "items": [
+      {"title": "120+ ngân hàng", "desc": "Được cấu hình sẵn cho các ngân hàng tại Bắc Mỹ, EU, Anh, Úc và Châu Á. Thêm ngân hàng của bạn khi chạy."},
+      {"title": "100% ngoại tuyến", "desc": "Không gọi mạng. Không khóa API. Không đám mây. Dữ liệu không bao giờ rời khỏi thiết bị."},
+      {"title": "68 ngôn ngữ", "desc": "OCR + phân tích ngày tháng bằng tiếng Đức, Pháp, Nhật, Ả Rập, Hindi, Thái và nhiều hơn nữa. 70+ loại tiền tệ."},
+      {"title": "OCR hóa đơn", "desc": "Trích xuất người bán, tổng cộng, thuế, tiền boa và các mục từ ảnh hóa đơn."},
+      {"title": "Xuất định dạng", "desc": "Chuyển đổi giữa CSV, OFX, QIF, JSON. Phân tích bất kỳ định dạng nào, xuất sang bất kỳ định dạng khác."},
+      {"title": "Công cụ CLI", "desc": "npx statementkit parse statement.csv — phân tích headless cho CI/script."}
+    ]
+  },
+  "codeExamples": {"heading": "API đơn giản"},
+  "pricing": {
+    "heading": "Một giá. Truy cập trọn đời.",
+    "subtitle": "Không đăng ký. Không phí theo lượt gọi API. Không bị ràng buộc nhà cung cấp.",
+    "price": "$79",
+    "priceLabel": "thanh toán một lần",
+    "items": [
+      "Mã nguồn đầy đủ (TypeScript)",
+      "120+ cấu hình ngân hàng tại 6 khu vực",
+      "11 định dạng đầu vào + 4 định dạng xuất",
+      "PDF OCR (68 ngôn ngữ)",
+      "OCR ảnh hóa đơn",
+      "Công cụ CLI + nhập hàng loạt",
+      "Giao diện nhà cung cấp AI (BYOK)",
+      "432 bài kiểm tra đạt",
+      "Cập nhật trọn đời qua GitHub",
+      "Giấy phép MIT — sử dụng trong bất kỳ dự án nào"
+    ],
+    "cta": "Mua StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Câu hỏi thường gặp",
+    "items": [
+      {"q": "Tôi nhận được gì?", "a": "Mã nguồn TypeScript đầy đủ được cung cấp qua quyền truy cập kho GitHub. 120+ bộ phân tích ngân hàng, 11 bộ xử lý định dạng, PDF OCR, công cụ CLI và giao diện nhà cung cấp AI. Giấy phép MIT — sử dụng trong bất kỳ dự án nào, thương mại hay cá nhân."},
+      {"q": "Phân tích ngoại tuyến hoạt động như thế nào?", "a": "Toàn bộ phân tích chạy cục bộ — CSV, OFX, QIF, MT940 và CAMT không cần bất kỳ cuộc gọi mạng nào. PDF OCR sử dụng Tesseract.js chạy trong trình duyệt hoặc Node.js. Không có dữ liệu nào rời khỏi hạ tầng của bạn."},
+      {"q": "Tôi có thể thêm ngân hàng của mình không?", "a": "Có. Sử dụng registerBank() khi chạy, tải từ tệp cấu hình JSON hoặc sử dụng lệnh CLI config suggest để tự động phát hiện cột từ CSV mẫu."},
+      {"q": "Còn tính năng AI thì sao?", "a": "AI hoàn toàn tùy chọn. Toàn bộ phân tích hoạt động mà không cần nó. Nếu bạn muốn phát hiện trùng lặp thông minh hoặc làm giàu dữ liệu người bán, hãy mang khóa API của riêng bạn (OpenAI, Anthropic hoặc bất kỳ LLM nào) qua giao diện AIProvider."},
+      {"q": "Có bản dùng thử miễn phí không?", "a": "Các bộ phân tích cốt lõi có sẵn dưới dạng gói npm open-source. Phiên bản Pro ($79) bổ sung PDF OCR, hỗ trợ CAMT/MT940, công cụ CLI, giao diện AI và cấu hình ngân hàng ưu tiên."}
+    ]
+  },
+  "footer": {"builtBy": "Được xây dựng bởi"},
+  "languageSelector": {"label": "Bản dịch được tạo bằng", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Đầu vào", "parsed": "Đã phân tích", "languages": "68 ngôn ngữ"}
+}

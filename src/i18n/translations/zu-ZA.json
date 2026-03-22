@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "badge": "Ukuhlaziywa Kwezintatimende Zasebhange Okubeka Ubumfihlo Phambili",
+    "headline1": "Hlaziya Noma Yisiphi Isitatimende Sasebhange",
+    "headline2": "Nganoma Yiluphi Ulimi",
+    "subheadline": "120+ amabhange. Amafomathi angu-11. Izilimi ezingu-68. 70+ izimali. I-SDK eyodwa. Izinsizakalo zangaphandle ezingu-zero. 100% ngaphandle kwe-inthanethi.",
+    "cta": "Thola i-StatementKit — {price}",
+    "ctaSecondary": "Buka ku-GitHub",
+    "installComment": "# Faka",
+    "callout": "Inkokhelo eyodwa — akukho okubhalisela, akukho izindleko nge-API ngayinye"
+  },
+  "comparison": {
+    "heading": "Kungani Ungasebenzisi i-Plaid?",
+    "subtitle": "Ama-API ahlanganisayo abiza $30-200K/unyaka, adinga ukuxhumana kwefu futhi athumela idatha yabasebenzisi bakho kumaseva abantu besithathu. I-StatementKit isebenza ngokuphelele engqalasizindeni yakho.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/unyaka", "Incike efwini", "Idatha yomsebenzisi ithunyelwa kubantu besithathu", "Intengo ngokuxhuma ngakunye", "Imikhawulo yesivinini se-API"],
+    "ossTitle": "Abahlaziyayo be-Open-Source",
+    "ossItems": ["Mahhala", "Ifomethi engu-1 ngayinye", "IsiNgisi kuphela", "Amabhange angu-1-5", "Akukho ukulungiswa"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 kanye", "Amafomathi angu-11, 120+ amabhange", "Izilimi ezingu-68, 70+ izimali", "100% ngaphandle kwe-inthanethi, ama-API calls angu-zero", "Inakekelwa ngenkuthalo"]
+  },
+  "formats": {
+    "heading": "Amafomathi angu-11. I-API eyodwa.",
+    "items": {
+      "csv": "120+ ukuhlela kwamabhange",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "Umbhalo + OCR (izilimi ezingu-68)",
+      "qif": "Quicken Interchange",
+      "mt940": "Izintatimende ze-SWIFT",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "Konke Okudingayo",
+    "items": [
+      {"title": "120+ amabhange", "desc": "Kuhlelwe ngaphambili kwamabhange e-NA, EU, UK, AU, Asia. Engeza awakho ngesikhathi sokusebenza."},
+      {"title": "100% ngaphandle kwe-inthanethi", "desc": "Ukushaya kwenethiwekhi okungu-zero. Akukho okhiye be-API. Akukho ifu. Idatha ayilokothi ishiye idivayisi."},
+      {"title": "Izilimi ezingu-68", "desc": "OCR + ukuhlaziywa kwezinsuku ngesiJalimane, isiFulentshi, isiJapani, isi-Arabhu, isiHindi, isiThayi nokunye. 70+ izimali."},
+      {"title": "OCR yamarisidi", "desc": "Khipha umthengisi, inani eliphelele, intela, ithiphu nezinto zomugqa ezithombeni zamarisidi."},
+      {"title": "Ukuthunyelwa kwamafomathi", "desc": "Guqula phakathi kwe-CSV, OFX, QIF, JSON. Hlaziya noma yiliphi ifomethi, uthumele kunoma yiliphi elinye."},
+      {"title": "Ithuluzi le-CLI", "desc": "npx statementkit parse statement.csv — ukuhlaziywa okungenanhloko kwe-CI/izikripthi."}
+    ]
+  },
+  "codeExamples": {"heading": "I-API elula"},
+  "pricing": {
+    "heading": "Intengo eyodwa. Ukufinyelela kwempilo yonke.",
+    "subtitle": "Akukho okubhalisela. Akukho izindleko nge-API ngayinye. Akukho ukuvalelwa kumhlinzeki.",
+    "price": "$79",
+    "priceLabel": "inkokhelo eyodwa",
+    "items": [
+      "Ikhodi yomthombo ephelele (TypeScript)",
+      "120+ ukuhlela kwamabhange ezifundeni ezingu-6",
+      "Amafomathi okokufaka angu-11 + amafomathi okuthumela angu-4",
+      "PDF OCR (izilimi ezingu-68)",
+      "OCR yezithombe zamarisidi",
+      "Ithuluzi le-CLI + ukungenisa ngeqoqo",
+      "Isixhumanisi somhlinzeki we-AI (BYOK)",
+      "Ukuhlolwa okungu-432 okudlulayo",
+      "Izibuyekezo zempilo yonke nge-GitHub",
+      "Ilayisensi ye-MIT — sebenzisa kunoma yimuphi umklamo"
+    ],
+    "cta": "Thenga i-StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Imibuzo Ebuzwa Njalo",
+    "items": [
+      {"q": "Ngithola ini?", "a": "Ikhodi yomthombo ye-TypeScript ephelele enikezwa ngokufinyelela kwe-GitHub repo. 120+ abahlaziyayo bamabhange, abalawuli bamafomathi angu-11, PDF OCR, ithuluzi le-CLI nesixhumanisi somhlinzeki we-AI. Ilayisensi ye-MIT — sebenzisa kunoma yimuphi umklamo, wezohwebo noma womuntu siqu."},
+      {"q": "Ukuhlaziywa ngaphandle kwe-inthanethi kusebenza kanjani?", "a": "Konke ukuhlaziywa kusebenza endaweni — CSV, OFX, QIF, MT940, ne-CAMT akudingi ukushaya kwenethiwekhi. I-PDF OCR isebenzisa i-Tesseract.js esebenza kusiphequluli noma ku-Node.js. Ayikho idatha elokothi ishiye ingqalasizinda yakho."},
+      {"q": "Ngingangeza ibhange lami?", "a": "Yebo. Sebenzisa i-registerBank() ngesikhathi sokusebenza, layisha emafayeleni okuhlela e-JSON noma sebenzisa umyalo we-CLI config suggest ukuthola ngokuzenzakalelayo izinhlu kusampula ye-CSV."},
+      {"q": "Kuthiwani ngezici ze-AI?", "a": "I-AI iyinto ekhethwayo ngo-100%. Konke ukuhlaziywa kusebenza ngaphandle kwayo. Uma ufuna ukutholwa okuhlakaniphile kwezimpinda noma ukucebisa kwedatha yomthengisi, letha ukhiye wakho we-API (OpenAI, Anthropic noma noma yiliphi i-LLM) ngesixhumanisi se-AIProvider."},
+      {"q": "Kukhona ukuzama kwamahhala?", "a": "Abahlaziyayo abayinhloko batholakala njengephakheji ye-npm ye-open-source. Inguqulo ye-Pro ($79) yengeza i-PDF OCR, ukusekelwa kwe-CAMT/MT940, ithuluzi le-CLI, isixhumanisi se-AI nokuhlela kwamabhange okubalulekile."}
+    ]
+  },
+  "footer": {"builtBy": "Kwakhiwe ngu-"},
+  "languageSelector": {"label": "Izinguqulo zakhiwe nge-", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Okokufaka", "parsed": "Kuhlaziyiwe", "languages": "Izilimi ezingu-68"}
+}

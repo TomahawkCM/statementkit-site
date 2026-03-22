@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "badge": "Integritetsfokuserad parsning av kontoutdrag",
+    "headline1": "Parsa vilket kontoutdrag som helst",
+    "headline2": "På vilket språk som helst",
+    "subheadline": "120+ banker. 11 format. 68 språk. 70+ valutor. Ett SDK. Inga externa tjänster. 100% offline.",
+    "cta": "Skaffa StatementKit — {price}",
+    "ctaSecondary": "Visa på GitHub",
+    "installComment": "# Installera",
+    "callout": "Engångsbetalning — inga prenumerationer, inga avgifter per API-anrop"
+  },
+  "comparison": {
+    "heading": "Varför inte Plaid?",
+    "subtitle": "Aggregator-API:er kostar $30-200K/år, kräver molnanslutning och skickar dina användares data till tredjepartsservrar. StatementKit körs helt på din infrastruktur.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/år", "Molnberoende", "Användardata skickas till tredje part", "Pris per anslutning", "API-hastighetsbegränsningar"],
+    "ossTitle": "Open-Source-parsers",
+    "ossItems": ["Gratis", "1 format vardera", "Bara engelska", "1-5 banker", "Inget underhåll"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 engångsavgift", "11 format, 120+ banker", "68 språk, 70+ valutor", "100% offline, inga API-anrop", "Aktivt underhållen"]
+  },
+  "formats": {
+    "heading": "11 format. Ett API.",
+    "items": {
+      "csv": "120+ bankkonfigurationer",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "Text + OCR (68 språk)",
+      "qif": "Quicken Interchange",
+      "mt940": "SWIFT-utdrag",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "Allt du behöver",
+    "items": [
+      {"title": "120+ banker", "desc": "Förkonfigurerade för banker i Nordamerika, EU, Storbritannien, Australien och Asien. Lägg till egna vid körning."},
+      {"title": "100% offline", "desc": "Inga nätverksanrop. Inga API-nycklar. Inget moln. Data lämnar aldrig enheten."},
+      {"title": "68 språk", "desc": "OCR + datumparsning på tyska, franska, japanska, arabiska, hindi, thai och mer. 70+ valutor."},
+      {"title": "Kvitto-OCR", "desc": "Extrahera handlare, totalbelopp, skatt, dricks och radposter från kvittofoton."},
+      {"title": "Formatexport", "desc": "Konvertera mellan CSV, OFX, QIF, JSON. Parsa vilket format som helst, exportera till vilket annat som helst."},
+      {"title": "CLI-verktyg", "desc": "npx statementkit parse statement.csv — huvudlös parsning för CI/skript."}
+    ]
+  },
+  "codeExamples": {"heading": "Enkelt API"},
+  "pricing": {
+    "heading": "Ett pris. Livstids åtkomst.",
+    "subtitle": "Inga prenumerationer. Inga avgifter per API-anrop. Ingen leverantörsinlåsning.",
+    "price": "$79",
+    "priceLabel": "engångsbetalning",
+    "items": [
+      "Fullständig källkod (TypeScript)",
+      "120+ bankkonfigurationer i 6 regioner",
+      "11 inmatningsformat + 4 exportformat",
+      "PDF OCR (68 språk)",
+      "Kvittofoto-OCR",
+      "CLI-verktyg + batchimport",
+      "AI-leverantörsgränssnitt (BYOK)",
+      "432 tester godkända",
+      "Livstidsuppdateringar via GitHub",
+      "MIT-licens — använd i vilket projekt som helst"
+    ],
+    "cta": "Köp StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Vanliga frågor",
+    "items": [
+      {"q": "Vad får jag?", "a": "Fullständig TypeScript-källkod levererad via åtkomst till GitHub-repo. 120+ bankparsers, 11 formathanterare, PDF OCR, CLI-verktyg och AI-leverantörsgränssnitt. MIT-licensierad — använd i vilket projekt som helst, kommersiellt eller personligt."},
+      {"q": "Hur fungerar offline-parsning?", "a": "All parsning körs lokalt — CSV, OFX, QIF, MT940 och CAMT-parsning behöver inga nätverksanrop. PDF OCR använder Tesseract.js som körs i webbläsaren eller Node.js. Ingen data lämnar någonsin din infrastruktur."},
+      {"q": "Kan jag lägga till min egen bank?", "a": "Ja. Använd registerBank() vid körning, ladda från JSON-konfigurationsfiler eller använd CLI config suggest-kommandot för att automatiskt detektera kolumner från en exempel-CSV."},
+      {"q": "Vad gäller AI-funktioner?", "a": "AI är 100% valfritt. All parsning fungerar utan det. Om du vill ha smart dubblettdetektering eller handlarberikande, ta med din egen API-nyckel (OpenAI, Anthropic eller valfri LLM) via AIProvider-gränssnittet."},
+      {"q": "Finns det en gratis provperiod?", "a": "Kärnparsers finns tillgängliga som ett open-source npm-paket. Pro-versionen ($79) lägger till PDF OCR, CAMT/MT940-stöd, CLI-verktyg, AI-gränssnitt och prioriterade bankkonfigurationer."}
+    ]
+  },
+  "footer": {"builtBy": "Byggt av"},
+  "languageSelector": {"label": "Översättningar byggda med", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Indata", "parsed": "Parsat", "languages": "68 språk"}
+}

@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "badge": "Parsare extrase bancare cu confidențialitate prioritară",
+    "headline1": "Parsează orice extras bancar",
+    "headline2": "În orice limbă",
+    "subheadline": "120+ bănci. 11 formate. 68 limbi. 70+ monede. Un singur SDK. Zero servicii externe. 100% offline.",
+    "cta": "Obține StatementKit — {price}",
+    "ctaSecondary": "Vezi pe GitHub",
+    "installComment": "# Instalare",
+    "callout": "Plată unică — fără abonamente, fără taxe per apel API"
+  },
+  "comparison": {
+    "heading": "De ce nu Plaid?",
+    "subtitle": "API-urile de agregare costă $30-200K/an, necesită conectivitate cloud și trimit datele utilizatorilor către servere terțe. StatementKit rulează în întregime pe infrastructura ta.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/an", "Dependent de cloud", "Datele utilizatorilor trimise la terți", "Preț per conexiune", "Limite de rată API"],
+    "ossTitle": "Parsere Open-Source",
+    "ossItems": ["Gratuit", "1 format fiecare", "Doar engleză", "1-5 bănci", "Fără întreținere"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 plată unică", "11 formate, 120+ bănci", "68 limbi, 70+ monede", "100% offline, zero apeluri API", "Întreținut activ"]
+  },
+  "formats": {
+    "heading": "11 formate. Un singur API.",
+    "items": {
+      "csv": "120+ configurări de bănci",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "Text + OCR (68 limbi)",
+      "qif": "Quicken Interchange",
+      "mt940": "Extrase SWIFT",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "Tot ce ai nevoie",
+    "items": [
+      {"title": "120+ bănci", "desc": "Pre-configurat pentru bănci din America de Nord, UE, Marea Britanie, Australia și Asia. Adaugă propriile tale la runtime."},
+      {"title": "100% offline", "desc": "Zero apeluri de rețea. Fără chei API. Fără cloud. Datele nu părăsesc niciodată dispozitivul."},
+      {"title": "68 limbi", "desc": "OCR + parsare date în germană, franceză, japoneză, arabă, hindi, thailandeză și altele. 70+ monede."},
+      {"title": "OCR chitanțe", "desc": "Extrage comerciant, total, taxă, bacșiș și articole din fotografii de chitanțe."},
+      {"title": "Export formate", "desc": "Convertește între CSV, OFX, QIF, JSON. Parsează orice format, exportă în orice altul."},
+      {"title": "Instrument CLI", "desc": "npx statementkit parse statement.csv — parsare headless pentru CI/scripturi."}
+    ]
+  },
+  "codeExamples": {"heading": "API simplu"},
+  "pricing": {
+    "heading": "Un preț. Acces pe viață.",
+    "subtitle": "Fără abonamente. Fără taxe per apel API. Fără dependență de furnizor.",
+    "price": "$79",
+    "priceLabel": "plată unică",
+    "items": [
+      "Cod sursă complet (TypeScript)",
+      "120+ configurări de bănci în 6 regiuni",
+      "11 formate de intrare + 4 formate de export",
+      "PDF OCR (68 limbi)",
+      "OCR fotografii chitanțe",
+      "Instrument CLI + import în lot",
+      "Interfață furnizor AI (BYOK)",
+      "432 teste trecute",
+      "Actualizări pe viață prin GitHub",
+      "Licență MIT — folosește în orice proiect"
+    ],
+    "cta": "Cumpără StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Întrebări frecvente",
+    "items": [
+      {"q": "Ce primesc?", "a": "Cod sursă complet TypeScript livrat prin acces la repository-ul GitHub. 120+ parsere bancare, 11 handlere de format, PDF OCR, instrument CLI și interfață furnizor AI. Licență MIT — folosește în orice proiect, comercial sau personal."},
+      {"q": "Cum funcționează parsarea offline?", "a": "Toată parsarea rulează local — CSV, OFX, QIF, MT940 și CAMT nu necesită niciun apel de rețea. PDF OCR folosește Tesseract.js care rulează în browser sau Node.js. Nicio dată nu părăsește infrastructura ta."},
+      {"q": "Pot adăuga propria bancă?", "a": "Da. Folosește registerBank() la runtime, încarcă din fișiere de configurare JSON sau folosește comanda CLI config suggest pentru a detecta automat coloanele dintr-un CSV de exemplu."},
+      {"q": "Ce zici de funcțiile AI?", "a": "AI este 100% opțional. Toată parsarea funcționează fără el. Dacă vrei detectare inteligentă a duplicatelor sau îmbogățire de comercianți, adu propria cheie API (OpenAI, Anthropic sau orice LLM) prin interfața AIProvider."},
+      {"q": "Există o perioadă de probă gratuită?", "a": "Parserele de bază sunt disponibile ca pachet npm open-source. Versiunea Pro ($79) adaugă PDF OCR, suport CAMT/MT940, instrument CLI, interfață AI și configurări prioritare de bănci."}
+    ]
+  },
+  "footer": {"builtBy": "Creat de"},
+  "languageSelector": {"label": "Traduceri realizate cu", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Intrare", "parsed": "Parsat", "languages": "68 limbi"}
+}

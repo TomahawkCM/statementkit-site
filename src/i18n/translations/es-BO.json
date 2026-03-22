@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "badge": "Análisis de Extractos Bancarios con Privacidad Primero",
+    "headline1": "Analiza Cualquier Extracto Bancario",
+    "headline2": "En Cualquier Idioma",
+    "subheadline": "120+ bancos. 11 formatos. 68 idiomas. 70+ monedas. Un SDK. Sin servicios externos. 100% sin conexión.",
+    "cta": "Obtén StatementKit — {price}",
+    "ctaSecondary": "Ver en GitHub",
+    "installComment": "# Instalar",
+    "callout": "Compra única — sin suscripciones, sin cargos por llamada a API"
+  },
+  "comparison": {
+    "heading": "¿Por Qué No Plaid?",
+    "subtitle": "Las APIs de agregadores cuestan $30-200K/año, requieren conectividad en la nube y envían los datos de tus usuarios a servidores de terceros. StatementKit funciona completamente en tu infraestructura.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/año", "Dependiente de la nube", "Datos del usuario enviados a terceros", "Precio por conexión", "Límites de tasa de API"],
+    "ossTitle": "Parsers de Código Abierto",
+    "ossItems": ["Gratis", "1 formato cada uno", "Solo inglés", "1-5 bancos", "Sin mantenimiento"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 por única vez", "11 formatos, 120+ bancos", "68 idiomas, 70+ monedas", "100% sin conexión, cero llamadas a API", "Mantenido activamente"]
+  },
+  "formats": {
+    "heading": "11 Formatos. Una API.",
+    "items": {"csv": "120+ configuraciones bancarias", "ofx": "1.x SGML + 2.x XML", "pdf": "Texto + OCR (68 idiomas)", "qif": "Quicken Interchange", "mt940": "Extractos SWIFT", "camt": "ISO 20022 (052/053/054)"}
+  },
+  "features": {
+    "heading": "Todo Lo Que Necesitas",
+    "items": [
+      {"title": "120+ Bancos", "desc": "Preconfigurado para bancos de Norteamérica, UE, Reino Unido, Australia y Asia. Agrega el tuyo en tiempo de ejecución."},
+      {"title": "100% Sin Conexión", "desc": "Cero llamadas de red. Sin claves API. Sin nube. Los datos nunca salen del dispositivo."},
+      {"title": "68 Idiomas", "desc": "OCR + análisis de fechas en alemán, francés, japonés, árabe, hindi, tailandés y más. 70+ monedas."},
+      {"title": "OCR de Recibos", "desc": "Extrae comerciante, total, impuesto, propina y líneas de ítems de fotos de recibos."},
+      {"title": "Exportación de Formatos", "desc": "Convierte entre CSV, OFX, QIF, JSON. Analiza cualquier formato, exporta a cualquier otro."},
+      {"title": "Herramienta CLI", "desc": "npx statementkit parse statement.csv — análisis sin interfaz para CI/scripts."}
+    ]
+  },
+  "codeExamples": {"heading": "API Simple"},
+  "pricing": {
+    "heading": "Un Precio. Acceso De Por Vida.",
+    "subtitle": "Sin suscripciones. Sin cargos por llamada a API. Sin dependencia de proveedor.",
+    "price": "$79",
+    "priceLabel": "pago único",
+    "items": ["Código fuente completo (TypeScript)", "120+ configuraciones bancarias en 6 regiones", "11 formatos de entrada + 4 formatos de exportación", "PDF OCR (68 idiomas)", "OCR de fotos de recibos", "Herramienta CLI + importación por lotes", "Interfaz de proveedor AI (BYOK)", "432 tests pasando", "Actualizaciones de por vida vía GitHub", "Licencia MIT — úsalo en cualquier proyecto"],
+    "cta": "Compra StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Preguntas Frecuentes",
+    "items": [
+      {"q": "¿Qué recibo?", "a": "Código fuente TypeScript completo entregado mediante acceso al repositorio de GitHub. 120+ parsers bancarios, 11 manejadores de formato, PDF OCR, herramienta CLI e interfaz de proveedor AI. Licencia MIT — úsalo en cualquier proyecto, comercial o personal."},
+      {"q": "¿Cómo funciona el análisis sin conexión?", "a": "Todo el análisis se ejecuta localmente — el análisis de CSV, OFX, QIF, MT940 y CAMT no necesita ninguna llamada de red. PDF OCR usa Tesseract.js que funciona en el navegador o Node.js. Ningún dato sale jamás de tu infraestructura."},
+      {"q": "¿Puedo agregar mi propio banco?", "a": "Sí. Usa registerBank() en tiempo de ejecución, carga desde archivos de configuración JSON, o usa el comando CLI config suggest para detectar columnas automáticamente desde un CSV de ejemplo."},
+      {"q": "¿Qué hay de las funciones de AI?", "a": "AI es 100% opcional. Todo el análisis funciona sin él. Si quieres detección inteligente de duplicados o enriquecimiento de comerciantes, trae tu propia clave API (OpenAI, Anthropic o cualquier LLM) mediante la interfaz AIProvider."},
+      {"q": "¿Hay una prueba gratuita?", "a": "Los parsers básicos están disponibles como paquete npm de código abierto. La versión Pro ($79) agrega PDF OCR, soporte CAMT/MT940, herramienta CLI, interfaz AI y configuraciones bancarias prioritarias."}
+    ]
+  },
+  "footer": {"builtBy": "Creado por"},
+  "languageSelector": {"label": "Traducciones creadas con", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Entrada", "parsed": "Analizado", "languages": "68 idiomas"}
+}

@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "badge": "隐私优先的银行账单解析",
+    "headline1": "解析任何银行账单",
+    "headline2": "支持任何语言",
+    "subheadline": "120+ 家银行。11 种格式。68 种语言。70+ 种货币。一个 SDK。零外部服务。100% 离线。",
+    "cta": "获取 StatementKit — {price}",
+    "ctaSecondary": "在 GitHub 上查看",
+    "installComment": "# 安装",
+    "callout": "一次性付费 — 无订阅，无 API 调用费用"
+  },
+  "comparison": {
+    "heading": "为什么不用 Plaid？",
+    "subtitle": "聚合器 API 每年花费 $30-200K，需要云端连接，并将用户数据发送到第三方服务器。StatementKit 完全运行在您自己的基础设施上。",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/年", "依赖云端", "用户数据发送给第三方", "按连接计费", "API 速率限制"],
+    "ossTitle": "开源解析器",
+    "ossItems": ["免费", "每个仅支持 1 种格式", "仅支持英文", "1-5 家银行", "无维护"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 一次性付费", "11 种格式，120+ 家银行", "68 种语言，70+ 种货币", "100% 离线，零 API 调用", "持续维护中"]
+  },
+  "formats": {
+    "heading": "11 种格式。一个 API。",
+    "items": {
+      "csv": "120+ 家银行配置",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "文本 + OCR（68 种语言）",
+      "qif": "Quicken Interchange",
+      "mt940": "SWIFT 账单",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "您需要的一切",
+    "items": [
+      {"title": "120+ 家银行", "desc": "预配置支持北美、欧盟、英国、澳大利亚和亚洲的银行。运行时添加您自己的银行。"},
+      {"title": "100% 离线", "desc": "零网络调用。无需 API 密钥。无需云端。数据永远不会离开设备。"},
+      {"title": "68 种语言", "desc": "支持德语、法语、日语、阿拉伯语、印地语、泰语等语言的 OCR + 日期解析。70+ 种货币。"},
+      {"title": "收据 OCR", "desc": "从收据照片中提取商家、总额、税费、小费和明细项。"},
+      {"title": "格式导出", "desc": "在 CSV、OFX、QIF、JSON 之间转换。解析任何格式，导出为任何其他格式。"},
+      {"title": "CLI 工具", "desc": "npx statementkit parse statement.csv — 用于 CI/脚本的无头解析。"}
+    ]
+  },
+  "codeExamples": {"heading": "简洁的 API"},
+  "pricing": {
+    "heading": "一个价格。终身使用。",
+    "subtitle": "无订阅。无 API 调用费用。无供应商锁定。",
+    "price": "$79",
+    "priceLabel": "一次性付费",
+    "items": [
+      "完整源代码（TypeScript）",
+      "6 个地区 120+ 家银行配置",
+      "11 种输入格式 + 4 种导出格式",
+      "PDF OCR（68 种语言）",
+      "收据照片 OCR",
+      "CLI 工具 + 批量导入",
+      "AI 提供商接口（BYOK）",
+      "432 项测试通过",
+      "通过 GitHub 终身更新",
+      "MIT 许可证 — 可用于任何项目"
+    ],
+    "cta": "购买 StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "常见问题",
+    "items": [
+      {"q": "我能得到什么？", "a": "通过 GitHub 仓库访问获取完整的 TypeScript 源代码。120+ 家银行解析器、11 个格式处理器、PDF OCR、CLI 工具和 AI 提供商接口。MIT 许可证 — 可用于任何项目，商业或个人。"},
+      {"q": "离线解析如何工作？", "a": "所有解析都在本地运行 — CSV、OFX、QIF、MT940 和 CAMT 解析无需任何网络调用。PDF OCR 使用 Tesseract.js，可在浏览器或 Node.js 中运行。数据永远不会离开您的基础设施。"},
+      {"q": "我可以添加自己的银行吗？", "a": "可以。使用 registerBank() 在运行时添加，从 JSON 配置文件加载，或使用 CLI config suggest 命令从示例 CSV 自动检测列。"},
+      {"q": "AI 功能怎么样？", "a": "AI 是 100% 可选的。所有解析功能无需 AI 即可工作。如果您需要智能重复检测或商家数据丰富，可通过 AIProvider 接口使用您自己的 API 密钥（OpenAI、Anthropic 或任何 LLM）。"},
+      {"q": "有免费试用吗？", "a": "核心解析器以开源 npm 包的形式提供。Pro 版本（$79）增加了 PDF OCR、CAMT/MT940 支持、CLI 工具、AI 接口和优先银行配置。"}
+    ]
+  },
+  "footer": {"builtBy": "构建者"},
+  "languageSelector": {"label": "翻译由以下工具构建", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "输入", "parsed": "已解析", "languages": "68 种语言"}
+}

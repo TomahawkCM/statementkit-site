@@ -1,0 +1,88 @@
+{
+  "hero": {
+    "badge": "Privatumui teikiamas pirmenybė banko išrašų analizė",
+    "headline1": "Analizuokite bet kokį banko išrašą",
+    "headline2": "Bet kuria kalba",
+    "subheadline": "120+ bankų. 11 formatų. 68 kalbos. 70+ valiutų. Vienas SDK. Jokių išorinių paslaugų. 100% neprisijungus.",
+    "cta": "Įsigykite StatementKit — {price}",
+    "ctaSecondary": "Peržiūrėti GitHub",
+    "installComment": "# Diegimas",
+    "callout": "Vienkartinis pirkimas — jokių prenumeratų, jokių mokesčių už API iškvietimą"
+  },
+  "comparison": {
+    "heading": "Kodėl ne Plaid?",
+    "subtitle": "Agregatorių API kainuoja $30-200K/metus, reikalauja debesų ryšio ir siunčia jūsų naudotojų duomenis trečiųjų šalių serveriams. StatementKit veikia visiškai jūsų infrastruktūroje.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/metus", "Priklausomas nuo debesų", "Naudotojų duomenys siunčiami trečiajai šaliai", "Kaina už prisijungimą", "API greičio apribojimai"],
+    "ossTitle": "Atvirojo kodo analizatoriai",
+    "ossItems": ["Nemokama", "Po 1 formatą", "Tik angliškai", "1-5 bankai", "Jokios priežiūros"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 vienkartinis", "11 formatų, 120+ bankų", "68 kalbos, 70+ valiutų", "100% neprisijungus, jokių API iškvietimų", "Aktyviai prižiūrimas"]
+  },
+  "formats": {
+    "heading": "11 formatų. Vienas API.",
+    "items": {
+      "csv": "120+ bankų konfigūracijų",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "Tekstas + OCR (68 kalbos)",
+      "qif": "Quicken Interchange",
+      "mt940": "SWIFT išrašai",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "Viskas, ko jums reikia",
+    "items": [
+      {"title": "120+ bankų", "desc": "Iš anksto sukonfigūruota Šiaurės Amerikos, ES, JK, Australijos ir Azijos bankams. Pridėkite savus vykdymo metu."},
+      {"title": "100% neprisijungus", "desc": "Jokių tinklo iškvietimų. Jokių API raktų. Jokio debesies. Duomenys niekada nepalieka įrenginio."},
+      {"title": "68 kalbos", "desc": "OCR + datos analizė vokiečių, prancūzų, japonų, arabų, hindi, tajų ir kt. kalbomis. 70+ valiutų."},
+      {"title": "Kvitų OCR", "desc": "Iš kvitų nuotraukų ištraukite prekybininką, sumą, mokesčius, arbatpinigius ir eilutes."},
+      {"title": "Formatų eksportas", "desc": "Konvertuokite tarp CSV, OFX, QIF, JSON. Analizuokite bet kokį formatą, eksportuokite į bet kurį kitą."},
+      {"title": "CLI įrankis", "desc": "npx statementkit parse statement.csv — analizė be sąsajos CI/scenarijams."}
+    ]
+  },
+  "codeExamples": {
+    "heading": "Paprasta API"
+  },
+  "pricing": {
+    "heading": "Viena kaina. Prieiga visam gyvenimui.",
+    "subtitle": "Jokių prenumeratų. Jokių mokesčių už API iškvietimą. Jokio tiekėjo užrakinimo.",
+    "price": "$79",
+    "priceLabel": "vienkartinis mokėjimas",
+    "items": [
+      "Visas pirminės kodas (TypeScript)",
+      "120+ bankų konfigūracijų 6 regionuose",
+      "11 įvesties formatų + 4 eksporto formatai",
+      "PDF OCR (68 kalbos)",
+      "Kvitų nuotraukų OCR",
+      "CLI įrankis + paketinis importas",
+      "AI teikėjo sąsaja (BYOK)",
+      "432 testai praeiti",
+      "Atnaujinimai visam gyvenimui per GitHub",
+      "MIT licencija — naudokite bet kuriame projekte"
+    ],
+    "cta": "Pirkti StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Dažnai užduodami klausimai",
+    "items": [
+      {"q": "Ką gaunu?", "a": "Visas TypeScript pirminis kodas, pristatomas per GitHub saugyklos prieigą. 120+ bankų analizatorių, 11 formatų tvarkytuvų, PDF OCR, CLI įrankis ir AI teikėjo sąsaja. MIT licencija — naudokite bet kuriame projekte, komerciniame ar asmeniniame."},
+      {"q": "Kaip veikia analizė neprisijungus?", "a": "Visa analizė vyksta lokaliai — CSV, OFX, QIF, MT940 ir CAMT analizei nereikia jokių tinklo iškvietimų. PDF OCR naudoja Tesseract.js, kuris veikia naršyklėje arba Node.js. Jokiu duomenys niekada nepalieka jūsų infrastruktūros."},
+      {"q": "Ar galiu pridėti savo banką?", "a": "Taip. Naudokite registerBank() vykdymo metu, įkelkite iš JSON konfigūracijos failų arba naudokite CLI config suggest komandą automatiniam stulpelių aptikimui iš pavyzdinio CSV."},
+      {"q": "O kaip dėl AI funkcijų?", "a": "AI yra 100% neprivalomas. Visa analizė veikia be jo. Jei norite protingo dublikatų aptikimo ar prekybininko duomenų praturtinimo, atneškite savo API raktą (OpenAI, Anthropic arba bet kokį LLM) per AIProvider sąsają."},
+      {"q": "Ar yra nemokama bandomoji versija?", "a": "Pagrindiniai analizatoriai prieinami kaip atvirojo kodo npm paketas. Pro versija ($79) prideda PDF OCR, CAMT/MT940 palaikymą, CLI įrankį, AI sąsają ir prioritetines bankų konfigūracijas."}
+    ]
+  },
+  "footer": {
+    "builtBy": "Sukūrė"
+  },
+  "languageSelector": {
+    "label": "Vertimai sukurti su",
+    "polyglotLink": "Polyglot Kit"
+  },
+  "demo": {
+    "input": "Įvestis",
+    "parsed": "Išanalizuota",
+    "languages": "68 kalbos"
+  }
+}

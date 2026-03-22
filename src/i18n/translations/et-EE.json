@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "badge": "Privaatsusele keskendunud pangaväljavõtete analüüs",
+    "headline1": "Analüüsi mis tahes pangaväljavõtet",
+    "headline2": "Mis tahes keeles",
+    "subheadline": "120+ panka. 11 vormingut. 68 keelt. 70+ valuutat. Üks SDK. Null välisteenust. 100% võrguühenduseta.",
+    "cta": "Hangi StatementKit — {price}",
+    "ctaSecondary": "Vaata GitHubis",
+    "installComment": "# Paigaldamine",
+    "callout": "Ühekordne makse — ilma tellimusteta, ilma API-kõnede tasudeta"
+  },
+  "comparison": {
+    "heading": "Miks mitte Plaid?",
+    "subtitle": "Agregaatorite API-d maksavad $30-200K/aastas, vajavad pilveühendust ja saadavad sinu kasutajate andmed kolmandate osapoolte serveritesse. StatementKit töötab täielikult sinu infrastruktuuris.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/aastas", "Pilvest sõltuv", "Kasutajaandmed saadetakse kolmandatele", "Ühendusepõhine hinnastamine", "API piirangud"],
+    "ossTitle": "Avatud lähtekoodiga parserid",
+    "ossItems": ["Tasuta", "1 vorming igaüks", "Ainult inglise keel", "1-5 panka", "Hoolduseta"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 ühekordne", "11 vormingut, 120+ panka", "68 keelt, 70+ valuutat", "100% võrguühenduseta, null API-kõnet", "Aktiivselt hooldatud"]
+  },
+  "formats": {
+    "heading": "11 vormingut. Üks API.",
+    "items": {
+      "csv": "120+ pangakonfiguratsiooni",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "Tekst + OCR (68 keelt)",
+      "qif": "Quicken Interchange",
+      "mt940": "SWIFT väljavõtted",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "Kõik, mida vajad",
+    "items": [
+      {"title": "120+ panka", "desc": "Eelkonfigureeritud pankadele Põhja-Ameerikas, ELis, UKs, AUs, Aasias. Lisa oma käitusajal."},
+      {"title": "100% võrguühenduseta", "desc": "Null võrgukõnet. Pole API-võtmeid. Pole pilve. Andmed ei lahku kunagi seadmest."},
+      {"title": "68 keelt", "desc": "OCR + kuupäevaanalüüs saksa, prantsuse, jaapani, araabia, hindi, tai ja muudes keeltes. 70+ valuutat."},
+      {"title": "Tšeki OCR", "desc": "Tuvasta kaupmees, kogusumma, maks, jootraha ja reaüksused tšekifotodest."},
+      {"title": "Vormingueksport", "desc": "Teisenda CSV, OFX, QIF, JSON vahel. Analüüsi mis tahes vormingut, ekspordi mis tahes teise."},
+      {"title": "CLI tööriist", "desc": "npx statementkit parse statement.csv — peata analüüs CI/skriptide jaoks."}
+    ]
+  },
+  "codeExamples": {"heading": "Lihtne API"},
+  "pricing": {
+    "heading": "Üks hind. Eluaegne juurdepääs.",
+    "subtitle": "Pole tellimusi. Pole API-kõnede tasusid. Pole hankijalukku.",
+    "price": "$79",
+    "priceLabel": "ühekordne makse",
+    "items": [
+      "Täielik lähtekood (TypeScript)",
+      "120+ pangakonfiguratsiooni 6 piirkonnas",
+      "11 sisendvormingut + 4 ekspordivormingut",
+      "PDF OCR (68 keelt)",
+      "Tšekifoto OCR",
+      "CLI tööriist + pakettimport",
+      "AI pakkuja liides (BYOK)",
+      "432 testi läbitud",
+      "Eluaegsed uuendused GitHubi kaudu",
+      "MIT litsents — kasuta igas projektis"
+    ],
+    "cta": "Osta StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Korduma kippuvad küsimused",
+    "items": [
+      {"q": "Mida ma saan?", "a": "Täielik TypeScript lähtekood GitHubi reposiide juurdepääsu kaudu. 120+ pangaparserit, 11 vorminguhaldajat, PDF OCR, CLI tööriist ja AI pakkuja liides. MIT litsentsiga — kasuta igas projektis, ärilises või isiklikus."},
+      {"q": "Kuidas töötab võrguühenduseta analüüs?", "a": "Kogu analüüs toimub lokaalselt — CSV, OFX, QIF, MT940 ja CAMT analüüs ei vaja ühtegi võrgukõnet. PDF OCR kasutab Tesseract.js, mis töötab brauseris või Node.js-is. Andmed ei lahku kunagi sinu infrastruktuurist."},
+      {"q": "Kas ma saan oma panga lisada?", "a": "Jah. Kasuta registerBank() käitusajal, laadi JSON konfiguratsioonifailidest või kasuta CLI config suggest käsku, et automaatselt tuvastada veerud näidis-CSV-st."},
+      {"q": "Kuidas on AI funktsioonidega?", "a": "AI on 100% valikuline. Kogu analüüs töötab ilma selleta. Kui soovid nutikat duplikaatide tuvastust või kaupmehe rikastamist, too oma API-võti (OpenAI, Anthropic või mis tahes LLM) AIProvider liidese kaudu."},
+      {"q": "Kas on tasuta prooviversioon?", "a": "Põhiparserid on saadaval avatud lähtekoodiga npm paketina. Pro versioon ($79) lisab PDF OCR, CAMT/MT940 toe, CLI tööriista, AI liidese ja prioriteetsed pangakalonfiguratsioonid."}
+    ]
+  },
+  "footer": {"builtBy": "Loonud"},
+  "languageSelector": {"label": "Tõlked loodud kasutades", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Sisend", "parsed": "Analüüsitud", "languages": "68 keelt"}
+}

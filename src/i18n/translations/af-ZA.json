@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "badge": "Privaatheid-Eerste Bankstaatontleding",
+    "headline1": "Ontleed Enige Bankstaat",
+    "headline2": "In Enige Taal",
+    "subheadline": "120+ banke. 11 formate. 68 tale. 70+ geldeenhede. Een SDK. Geen eksterne dienste nie. 100% vanlyn.",
+    "cta": "Kry StatementKit — {price}",
+    "ctaSecondary": "Bekyk op GitHub",
+    "installComment": "# Installeer",
+    "callout": "Eenmalige aankoop — geen intekeninge, geen per-API-oproepfooie nie"
+  },
+  "comparison": {
+    "heading": "Hoekom Nie Plaid Nie?",
+    "subtitle": "Aggregeerder-API's kos $30-200K/jaar, vereis wolkverbinding, en stuur jou gebruikers se data na derdeparty-bedieners. StatementKit loop heeltemal op jou infrastruktuur.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/jaar", "Wolkafhanklik", "Gebruikersdata na derde party gestuur", "Per-verbinding-pryse", "API-spoedgrense"],
+    "ossTitle": "Oopbron-Ontleders",
+    "ossItems": ["Gratis", "1 formaat elk", "Slegs Engels", "1-5 banke", "Geen instandhouding"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 eenmalig", "11 formate, 120+ banke", "68 tale, 70+ geldeenhede", "100% vanlyn, nul API-oproepe", "Aktief onderhou"]
+  },
+  "formats": {
+    "heading": "11 Formate. Een API.",
+    "items": {"csv": "120+ bankkonfigurasies", "ofx": "1.x SGML + 2.x XML", "pdf": "Teks + OCR (68 tale)", "qif": "Quicken Interchange", "mt940": "SWIFT-state", "camt": "ISO 20022 (052/053/054)"}
+  },
+  "features": {
+    "heading": "Alles Wat Jy Nodig Het",
+    "items": [
+      {"title": "120+ Banke", "desc": "Voorgekonfigureer vir banke regoor NA, EU, VK, AU, Asië. Voeg jou eie by tydens looptyd."},
+      {"title": "100% Vanlyn", "desc": "Nul netwerkoproepe. Geen API-sleutels nie. Geen wolk nie. Data verlaat nooit die toestel nie."},
+      {"title": "68 Tale", "desc": "OCR + datumontleding in Duits, Frans, Japannees, Arabies, Hindi, Thai en meer. 70+ geldeenhede."},
+      {"title": "Kwitansie-OCR", "desc": "Onttrek handelaar, totaal, belasting, fooitjie en lynitems uit kwitansiefoto's."},
+      {"title": "Formaat-Uitvoer", "desc": "Skakel tussen CSV, OFX, QIF, JSON. Ontleed enige formaat, voer na enige ander uit."},
+      {"title": "CLI-Gereedskap", "desc": "npx statementkit parse statement.csv — koplose ontleding vir CI/skrifte."}
+    ]
+  },
+  "codeExamples": {"heading": "Eenvoudige API"},
+  "pricing": {
+    "heading": "Een Prys. Lewenslange Toegang.",
+    "subtitle": "Geen intekeninge nie. Geen per-API-oproepfooie nie. Geen verskaffer-insluiting nie.",
+    "price": "$79",
+    "priceLabel": "eenmalige betaling",
+    "items": ["Volledige bronkode (TypeScript)", "120+ bankkonfigurasies oor 6 streke", "11 invoerformate + 4 uitvoerformate", "PDF OCR (68 tale)", "Kwitansiefoto-OCR", "CLI-gereedskap + bondelimport", "AI-verskaffer-koppelvlak (BYOK)", "432 toetse slaag", "Lewenslange opdaterings via GitHub", "MIT-lisensie — gebruik in enige projek"],
+    "cta": "Koop StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Gereelde Vrae",
+    "items": [
+      {"q": "Wat kry ek?", "a": "Volledige TypeScript-bronkode afgelewer via GitHub-bewaarplek-toegang. 120+ bankontleders, 11 formaathanteerders, PDF OCR, CLI-gereedskap en AI-verskaffer-koppelvlak. MIT-gelisensieer — gebruik in enige projek, kommersieel of persoonlik."},
+      {"q": "Hoe werk vanlyn-ontleding?", "a": "Alle ontleding loop plaaslik — CSV, OFX, QIF, MT940 en CAMT-ontleding benodig nul netwerkoproepe. PDF OCR gebruik Tesseract.js wat in die blaaier of Node.js loop. Geen data verlaat ooit jou infrastruktuur nie."},
+      {"q": "Kan ek my eie bank byvoeg?", "a": "Ja. Gebruik registerBank() tydens looptyd, laai vanaf JSON-konfigurasielêers, of gebruik die CLI config suggest-opdrag om kolomme outomaties van 'n voorbeeld-CSV te identifiseer."},
+      {"q": "Wat van AI-kenmerke?", "a": "AI is 100% opsioneel. Alle ontleding werk sonder dit. As jy slim duplikaatopsporing of handelaarverryking wil hê, bring jou eie API-sleutel (OpenAI, Anthropic, of enige LLM) via die AIProvider-koppelvlak."},
+      {"q": "Is daar 'n gratis proeftydperk?", "a": "Die kernontleders is beskikbaar as 'n oopbron npm-pakket. Die Pro-weergawe ($79) voeg PDF OCR, CAMT/MT940-ondersteuning, CLI-gereedskap, AI-koppelvlak en prioriteit-bankkonfigurasies by."}
+    ]
+  },
+  "footer": {"builtBy": "Gebou deur"},
+  "languageSelector": {"label": "Vertalings gebou met", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Invoer", "parsed": "Ontleed", "languages": "68 tale"}
+}

@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "badge": "Uchambuzi wa Taarifa za Benki Unaolinda Faragha",
+    "headline1": "Chambua Taarifa Yoyote ya Benki",
+    "headline2": "Katika Lugha Yoyote",
+    "subheadline": "120+ benki. Muundo 11. Lugha 68. Sarafu 70+. SDK moja. Huduma za nje sifuri. 100% nje ya mtandao.",
+    "cta": "Pata StatementKit — {price}",
+    "ctaSecondary": "Tazama kwenye GitHub",
+    "installComment": "# Sakinisha",
+    "callout": "Malipo ya mara moja — bila usajili, bila ada za kila wito wa API"
+  },
+  "comparison": {
+    "heading": "Kwa nini si Plaid?",
+    "subtitle": "API za wakusanyaji zinagharimu $30-200K/mwaka, zinahitaji muunganisho wa wingu na kutuma data za watumiaji wako kwa seva za wahusika wengine. StatementKit inafanya kazi kabisa kwenye miundombinu yako.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/mwaka", "Inategemea wingu", "Data ya mtumiaji inatumwa kwa wahusika wengine", "Bei kwa kila muunganisho", "Vikomo vya kiwango cha API"],
+    "ossTitle": "Vichambuzi vya Open-Source",
+    "ossItems": ["Bure", "Muundo 1 kila moja", "Kiingereza tu", "Benki 1-5", "Bila matengenezo"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 mara moja", "Muundo 11, 120+ benki", "Lugha 68, sarafu 70+", "100% nje ya mtandao, wito sifuri wa API", "Inatunzwa kikamilifu"]
+  },
+  "formats": {
+    "heading": "Muundo 11. API moja.",
+    "items": {
+      "csv": "120+ usanidi wa benki",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "Maandishi + OCR (lugha 68)",
+      "qif": "Quicken Interchange",
+      "mt940": "Taarifa za SWIFT",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "Kila kitu unachohitaji",
+    "items": [
+      {"title": "120+ benki", "desc": "Imesanidiwa awali kwa benki katika Amerika Kaskazini, EU, Uingereza, Australia na Asia. Ongeza zako wakati wa utekelezaji."},
+      {"title": "100% nje ya mtandao", "desc": "Wito sifuri wa mtandao. Bila funguo za API. Bila wingu. Data haiacha kifaa kamwe."},
+      {"title": "Lugha 68", "desc": "OCR + uchambuzi wa tarehe katika Kijerumani, Kifaransa, Kijapani, Kiarabu, Kihindi, Kithai na zaidi. Sarafu 70+."},
+      {"title": "OCR ya risiti", "desc": "Toa muuzaji, jumla, kodi, bakshishi na vipengele kutoka picha za risiti."},
+      {"title": "Usafirishaji wa muundo", "desc": "Badilisha kati ya CSV, OFX, QIF, JSON. Chambua muundo wowote, safirisha kwa mwingine wowote."},
+      {"title": "Chombo cha CLI", "desc": "npx statementkit parse statement.csv — uchambuzi bila kiolesura kwa CI/hati."}
+    ]
+  },
+  "codeExamples": {"heading": "API rahisi"},
+  "pricing": {
+    "heading": "Bei moja. Ufikiaji wa maisha.",
+    "subtitle": "Bila usajili. Bila ada za kila wito wa API. Bila kufungwa na muuzaji.",
+    "price": "$79",
+    "priceLabel": "malipo ya mara moja",
+    "items": [
+      "Msimbo kamili wa chanzo (TypeScript)",
+      "120+ usanidi wa benki katika mikoa 6",
+      "Muundo 11 wa kuingiza + muundo 4 wa kusafirisha",
+      "PDF OCR (lugha 68)",
+      "OCR ya picha za risiti",
+      "Chombo cha CLI + uingizaji wa kundi",
+      "Kiolesura cha mtoa huduma wa AI (BYOK)",
+      "Majaribio 432 yanafaulu",
+      "Masasisho ya maisha kupitia GitHub",
+      "Leseni ya MIT — tumia katika mradi wowote"
+    ],
+    "cta": "Nunua StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Maswali yanayoulizwa mara kwa mara",
+    "items": [
+      {"q": "Ninapata nini?", "a": "Msimbo kamili wa chanzo wa TypeScript unaotolewa kupitia ufikiaji wa hifadhi ya GitHub. Vichambuzi 120+ vya benki, vishughulishi 11 vya muundo, PDF OCR, chombo cha CLI na kiolesura cha mtoa huduma wa AI. Leseni ya MIT — tumia katika mradi wowote, wa kibiashara au wa kibinafsi."},
+      {"q": "Uchambuzi nje ya mtandao unafanyaje kazi?", "a": "Uchambuzi wote unafanywa ndani ya nchi — CSV, OFX, QIF, MT940 na CAMT hazihitaji wito wowote wa mtandao. PDF OCR hutumia Tesseract.js ambayo inafanya kazi kwenye kivinjari au Node.js. Data haitoki kamwe kwenye miundombinu yako."},
+      {"q": "Je, naweza kuongeza benki yangu?", "a": "Ndiyo. Tumia registerBank() wakati wa utekelezaji, pakia kutoka faili za usanidi wa JSON au tumia amri ya CLI config suggest kugundua safu wima kiotomatiki kutoka CSV ya mfano."},
+      {"q": "Vipi kuhusu vipengele vya AI?", "a": "AI ni 100% hiari. Uchambuzi wote unafanya kazi bila hiyo. Ukitaka ugunduzi wa akili wa nakala au uboreshaji wa data ya muuzaji, leta ufunguo wako wa API (OpenAI, Anthropic au LLM yoyote) kupitia kiolesura cha AIProvider."},
+      {"q": "Kuna jaribio la bure?", "a": "Vichambuzi vya msingi vinapatikana kama kifurushi cha npm cha open-source. Toleo la Pro ($79) linaongeza PDF OCR, msaada wa CAMT/MT940, chombo cha CLI, kiolesura cha AI na usanidi wa kipaumbele wa benki."}
+    ]
+  },
+  "footer": {"builtBy": "Imejengwa na"},
+  "languageSelector": {"label": "Tafsiri zimejengwa na", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Ingizo", "parsed": "Imechambuliwa", "languages": "Lugha 68"}
+}

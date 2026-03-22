@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "badge": "Analiza bankovnih izvadaka s naglaskom na privatnost",
+    "headline1": "Analizirajte bilo koji bankovni izvadak",
+    "headline2": "Na bilo kojem jeziku",
+    "subheadline": "120+ banaka. 11 formata. 68 jezika. 70+ valuta. Jedan SDK. Nula vanjskih usluga. 100% offline.",
+    "cta": "Nabavite StatementKit — {price}",
+    "ctaSecondary": "Pogledajte na GitHubu",
+    "installComment": "# Instalacija",
+    "callout": "Jednokratno plaćanje — bez pretplata, bez naknada po API pozivu"
+  },
+  "comparison": {
+    "heading": "Zašto ne Plaid?",
+    "subtitle": "API-ji agregatora koštaju $30-200K/godišnje, zahtijevaju povezivost s oblakom i šalju podatke vaših korisnika na poslužitelje trećih strana. StatementKit radi u potpunosti na vašoj infrastrukturi.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/godišnje", "Ovisan o oblaku", "Korisnički podaci šalju se trećoj strani", "Cijena po povezivanju", "API ograničenja"],
+    "ossTitle": "Open-source parseri",
+    "ossItems": ["Besplatno", "1 format svaki", "Samo engleski", "1-5 banaka", "Bez održavanja"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 jednokratno", "11 formata, 120+ banaka", "68 jezika, 70+ valuta", "100% offline, nula API poziva", "Aktivno održavan"]
+  },
+  "formats": {
+    "heading": "11 formata. Jedan API.",
+    "items": {
+      "csv": "120+ bankovnih konfiguracija",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "Tekst + OCR (68 jezika)",
+      "qif": "Quicken Interchange",
+      "mt940": "SWIFT izvadci",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "Sve što trebate",
+    "items": [
+      {"title": "120+ banaka", "desc": "Prethodno konfigurirano za banke u Sjevernoj Americi, EU, UK, AU, Aziji. Dodajte svoje u vrijeme izvršavanja."},
+      {"title": "100% offline", "desc": "Nula mrežnih poziva. Bez API ključeva. Bez oblaka. Podaci nikad ne napuštaju uređaj."},
+      {"title": "68 jezika", "desc": "OCR + analiza datuma na njemačkom, francuskom, japanskom, arapskom, hindiju, tajlandskom i više. 70+ valuta."},
+      {"title": "OCR računa", "desc": "Izvucite trgovca, ukupan iznos, porez, napojnicu i stavke iz fotografija računa."},
+      {"title": "Izvoz formata", "desc": "Pretvarajte između CSV, OFX, QIF, JSON. Analizirajte bilo koji format, izvezite u bilo koji drugi."},
+      {"title": "CLI alat", "desc": "npx statementkit parse statement.csv — analiza bez sučelja za CI/skripte."}
+    ]
+  },
+  "codeExamples": {"heading": "Jednostavan API"},
+  "pricing": {
+    "heading": "Jedna cijena. Doživotni pristup.",
+    "subtitle": "Bez pretplata. Bez naknada po API pozivu. Bez zaključavanja dobavljača.",
+    "price": "$79",
+    "priceLabel": "jednokratno plaćanje",
+    "items": [
+      "Potpuni izvorni kod (TypeScript)",
+      "120+ bankovnih konfiguracija u 6 regija",
+      "11 ulaznih formata + 4 izvozna formata",
+      "PDF OCR (68 jezika)",
+      "OCR fotografija računa",
+      "CLI alat + skupni uvoz",
+      "Sučelje AI pružatelja (BYOK)",
+      "432 testa prolazi",
+      "Doživotna ažuriranja putem GitHuba",
+      "MIT licenca — koristite u bilo kojem projektu"
+    ],
+    "cta": "Kupite StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Često postavljana pitanja",
+    "items": [
+      {"q": "Što dobivam?", "a": "Potpuni TypeScript izvorni kod isporučen putem pristupa GitHub repozitoriju. 120+ bankovnih parsera, 11 rukovatelja formatima, PDF OCR, CLI alat i sučelje AI pružatelja. MIT licenca — koristite u bilo kojem projektu, komercijalnom ili osobnom."},
+      {"q": "Kako radi offline analiza?", "a": "Sva analiza se izvršava lokalno — analiza CSV, OFX, QIF, MT940 i CAMT ne zahtijeva mrežne pozive. PDF OCR koristi Tesseract.js koji radi u pregledniku ili Node.js-u. Nijedan podatak nikad ne napušta vašu infrastrukturu."},
+      {"q": "Mogu li dodati vlastitu banku?", "a": "Da. Koristite registerBank() u vrijeme izvršavanja, učitajte iz JSON konfiguracijskih datoteka ili koristite CLI naredbu config suggest za automatsko otkrivanje stupaca iz uzorka CSV-a."},
+      {"q": "Što je s AI značajkama?", "a": "AI je 100% opcionalan. Sva analiza radi bez njega. Ako želite pametno otkrivanje duplikata ili obogaćivanje trgovaca, donesite vlastiti API ključ (OpenAI, Anthropic ili bilo koji LLM) putem AIProvider sučelja."},
+      {"q": "Postoji li besplatno probno razdoblje?", "a": "Osnovni parseri dostupni su kao npm paket otvorenog koda. Pro verzija ($79) dodaje PDF OCR, podršku za CAMT/MT940, CLI alat, AI sučelje i prioritetne bankovne konfiguracije."}
+    ]
+  },
+  "footer": {"builtBy": "Izradio"},
+  "languageSelector": {"label": "Prijevodi izrađeni pomoću", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Ulaz", "parsed": "Analizirano", "languages": "68 jezika"}
+}

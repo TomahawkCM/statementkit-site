@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "badge": "Maxfiylikka ustunlik beruvchi bank ko'chirmalarini tahlil qilish",
+    "headline1": "Har qanday bank ko'chirmasini tahlil qiling",
+    "headline2": "Har qanday tilda",
+    "subheadline": "120+ bank. 11 format. 68 til. 70+ valyuta. Bitta SDK. Nol tashqi xizmatlar. 100% oflayn.",
+    "cta": "StatementKit oling — {price}",
+    "ctaSecondary": "GitHub da ko'ring",
+    "installComment": "# O'rnatish",
+    "callout": "Bir martalik to'lov — obuna yo'q, har bir API chaqiruvi uchun to'lov yo'q"
+  },
+  "comparison": {
+    "heading": "Nega Plaid emas?",
+    "subtitle": "Agregator API lar yiliga $30-200K turadi, bulut ulanishi talab qiladi va foydalanuvchilaringiz ma'lumotlarini uchinchi tomon serverlariga yuboradi. StatementKit to'liq sizning infratuzilmangizda ishlaydi.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/yil", "Bulutga bog'liq", "Foydalanuvchi ma'lumotlari uchinchi tomonga yuboriladi", "Har bir ulanish uchun narx", "API tezlik cheklovlari"],
+    "ossTitle": "Open-Source tahlilchilar",
+    "ossItems": ["Bepul", "Har biri 1 format", "Faqat inglizcha", "1-5 bank", "Texnik xizmat yo'q"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 bir martalik", "11 format, 120+ bank", "68 til, 70+ valyuta", "100% oflayn, nol API chaqiruvlari", "Faol ravishda saqlanadi"]
+  },
+  "formats": {
+    "heading": "11 format. Bitta API.",
+    "items": {
+      "csv": "120+ bank konfiguratsiyalari",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "Matn + OCR (68 til)",
+      "qif": "Quicken Interchange",
+      "mt940": "SWIFT ko'chirmalari",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "Sizga kerak bo'lgan hamma narsa",
+    "items": [
+      {"title": "120+ bank", "desc": "Shimoliy Amerika, Yevropa Ittifoqi, Buyuk Britaniya, Avstraliya va Osiyo banklari uchun oldindan sozlangan. Ish vaqtida o'zingiznikini qo'shing."},
+      {"title": "100% oflayn", "desc": "Nol tarmoq chaqiruvlari. API kalitlari yo'q. Bulut yo'q. Ma'lumotlar hech qachon qurilmani tark etmaydi."},
+      {"title": "68 til", "desc": "Nemischa, fransuzcha, yaponcha, arabcha, hindcha, taycha va boshqalarda OCR + sana tahlili. 70+ valyuta."},
+      {"title": "Chek OCR", "desc": "Chek suratlaridan sotuvchi, jami, soliq, tip va qator elementlarini ajratib oling."},
+      {"title": "Format eksporti", "desc": "CSV, OFX, QIF, JSON o'rtasida o'zgartiring. Har qanday formatni tahlil qiling, boshqa har qanday formatga eksport qiling."},
+      {"title": "CLI vositasi", "desc": "npx statementkit parse statement.csv — CI/skriptlar uchun boshsiz tahlil."}
+    ]
+  },
+  "codeExamples": {"heading": "Oddiy API"},
+  "pricing": {
+    "heading": "Bitta narx. Umrbod kirish.",
+    "subtitle": "Obuna yo'q. Har bir API chaqiruvi uchun to'lov yo'q. Yetkazib beruvchiga bog'liqlik yo'q.",
+    "price": "$79",
+    "priceLabel": "bir martalik to'lov",
+    "items": [
+      "To'liq manba kodi (TypeScript)",
+      "6 mintaqada 120+ bank konfiguratsiyalari",
+      "11 kirish formati + 4 eksport formati",
+      "PDF OCR (68 til)",
+      "Chek surati OCR",
+      "CLI vositasi + partiyaviy import",
+      "AI provayder interfeysi (BYOK)",
+      "432 test o'tadi",
+      "GitHub orqali umrbod yangilanishlar",
+      "MIT litsenziyasi — har qanday loyihada foydalaning"
+    ],
+    "cta": "StatementKit sotib oling — {price}"
+  },
+  "faq": {
+    "heading": "Ko'p beriladigan savollar",
+    "items": [
+      {"q": "Men nima olaman?", "a": "GitHub repo kirishiga ega to'liq TypeScript manba kodi. 120+ bank tahlilchilari, 11 format ishlovchilari, PDF OCR, CLI vositasi va AI provayder interfeysi. MIT litsenziyasi — har qanday loyihada, tijorat yoki shaxsiy foydalaning."},
+      {"q": "Oflayn tahlil qanday ishlaydi?", "a": "Barcha tahlil mahalliy ravishda ishlaydi — CSV, OFX, QIF, MT940 va CAMT tahlili hech qanday tarmoq chaqiruvlarini talab qilmaydi. PDF OCR brauzerda yoki Node.js da ishlaydigan Tesseract.js dan foydalanadi. Ma'lumotlar hech qachon sizning infratuzilmangizni tark etmaydi."},
+      {"q": "O'z bankimni qo'sha olamanmi?", "a": "Ha. Ish vaqtida registerBank() dan foydalaning, JSON konfiguratsiya fayllaridan yuklang yoki namuna CSV dan ustunlarni avtomatik aniqlash uchun CLI config suggest buyrug'idan foydalaning."},
+      {"q": "AI funksiyalari haqida nima?", "a": "AI 100% ixtiyoriy. Barcha tahlil usiz ishlaydi. Agar siz aqlli dublikat aniqlash yoki sotuvchi ma'lumotlarini boyitishni xohlasangiz, AIProvider interfeysi orqali o'z API kalitingizni (OpenAI, Anthropic yoki har qanday LLM) olib keling."},
+      {"q": "Bepul sinov bormi?", "a": "Asosiy tahlilchilar open-source npm paketi sifatida mavjud. Pro versiyasi ($79) PDF OCR, CAMT/MT940 qo'llab-quvvatlashi, CLI vositasi, AI interfeysi va ustuvor bank konfiguratsiyalarini qo'shadi."}
+    ]
+  },
+  "footer": {"builtBy": "Yaratgan"},
+  "languageSelector": {"label": "Tarjimalar yaratilgan", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Kirish", "parsed": "Tahlil qilingan", "languages": "68 til"}
+}

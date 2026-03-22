@@ -1,0 +1,88 @@
+{
+  "hero": {
+    "badge": "Adatvédelem-központú bankszámlakivonat-elemzés",
+    "headline1": "Bármilyen bankszámlakivonat elemzése",
+    "headline2": "Bármilyen nyelven",
+    "subheadline": "120+ bank. 11 formátum. 68 nyelv. 70+ pénznem. Egyetlen SDK. Nulla külső szolgáltatás. 100% offline.",
+    "cta": "StatementKit beszerzése — {price}",
+    "ctaSecondary": "Megtekintés a GitHub-on",
+    "installComment": "# Telepítés",
+    "callout": "Egyszeri vásárlás — nincs előfizetés, nincs API-hívásonkénti díj"
+  },
+  "comparison": {
+    "heading": "Miért nem Plaid?",
+    "subtitle": "Az aggregátor API-k évi 30–200 ezer dollárba kerülnek, felhőkapcsolatot igényelnek, és a felhasználók adatait harmadik fél szervereire küldik. A StatementKit teljes egészében az Ön infrastruktúráján fut.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["30–200 ezer $/év", "Felhőfüggő", "Felhasználói adatok harmadik félnek", "Kapcsolatonkénti árazás", "API-sebességkorlátok"],
+    "ossTitle": "Nyílt forráskódú elemzők",
+    "ossItems": ["Ingyenes", "Egyenként 1 formátum", "Csak angol", "1-5 bank", "Nincs karbantartás"],
+    "skTitle": "StatementKit",
+    "skItems": ["79 $ egyszeri díj", "11 formátum, 120+ bank", "68 nyelv, 70+ pénznem", "100% offline, nulla API-hívás", "Aktívan karbantartott"]
+  },
+  "formats": {
+    "heading": "11 formátum. Egyetlen API.",
+    "items": {
+      "csv": "120+ bankkonfiguráció",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "Szöveg + OCR (68 nyelv)",
+      "qif": "Quicken Interchange",
+      "mt940": "SWIFT kimutatások",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "Minden, amire szüksége van",
+    "items": [
+      {"title": "120+ bank", "desc": "Előre konfigurálva bankokhoz Észak-Amerikában, EU-ban, UK-ban, Ausztráliában és Ázsiában. Futásidőben sajátot is hozzáadhat."},
+      {"title": "100% offline", "desc": "Nulla hálózati hívás. Nincs API-kulcs. Nincs felhő. Az adatok soha nem hagyják el az eszközt."},
+      {"title": "68 nyelv", "desc": "OCR + dátumelemzés németül, franciául, japánul, arabul, hindül, thaiul és még sok más nyelven. 70+ pénznem."},
+      {"title": "Nyugta OCR", "desc": "Kereskedő, végösszeg, adó, borravaló és tételes sorok kinyerése nyugtafotókból."},
+      {"title": "Formátum exportálás", "desc": "Konvertálás CSV, OFX, QIF, JSON között. Bármilyen formátum elemzése, bármelyikbe exportálás."},
+      {"title": "CLI eszköz", "desc": "npx statementkit parse statement.csv — fej nélküli elemzés CI/szkriptekhez."}
+    ]
+  },
+  "codeExamples": {
+    "heading": "Egyszerű API"
+  },
+  "pricing": {
+    "heading": "Egy ár. Élethosszig tartó hozzáférés.",
+    "subtitle": "Nincs előfizetés. Nincs API-hívásonkénti díj. Nincs szállítói kötöttség.",
+    "price": "$79",
+    "priceLabel": "egyszeri fizetés",
+    "items": [
+      "Teljes forráskód (TypeScript)",
+      "120+ bankkonfiguráció 6 régióban",
+      "11 bemeneti formátum + 4 kimeneti formátum",
+      "PDF OCR (68 nyelv)",
+      "Nyugtafotó OCR",
+      "CLI eszköz + kötegelt importálás",
+      "AI szolgáltató interfész (BYOK)",
+      "432 teszt sikeresen lefut",
+      "Élethosszig tartó frissítések a GitHub-on keresztül",
+      "MIT licenc — bármilyen projektben használható"
+    ],
+    "cta": "StatementKit megvásárlása — {price}"
+  },
+  "faq": {
+    "heading": "Gyakran ismételt kérdések",
+    "items": [
+      {"q": "Mit kapok?", "a": "Teljes TypeScript forráskódot, GitHub repo hozzáféréssel. 120+ bankelemző, 11 formátumkezelő, PDF OCR, CLI eszköz és AI szolgáltató interfész. MIT licenc — bármilyen projektben használható, kereskedelmi vagy személyes célra."},
+      {"q": "Hogyan működik az offline elemzés?", "a": "Minden elemzés helyben fut — a CSV, OFX, QIF, MT940 és CAMT elemzéshez nulla hálózati hívás szükséges. A PDF OCR Tesseract.js-t használ, amely böngészőben vagy Node.js-ben fut. Semmilyen adat nem hagyja el az Ön infrastruktúráját."},
+      {"q": "Hozzáadhatok saját bankot?", "a": "Igen. Használja a registerBank() függvényt futásidőben, töltsön be JSON konfigurációs fájlokat, vagy használja a CLI config suggest parancsot az oszlopok automatikus felismeréséhez egy minta CSV-ből."},
+      {"q": "Mi a helyzet az AI funkciókkal?", "a": "Az AI 100%-ban opcionális. Minden elemzés működik nélküle. Ha intelligens duplikátumfelismerést vagy kereskedőbővítést szeretne, hozza a saját API-kulcsát (OpenAI, Anthropic, vagy bármilyen LLM) az AIProvider interfészen keresztül."},
+      {"q": "Van ingyenes próbaverzió?", "a": "Az alapelemzők nyílt forráskódú npm csomagként elérhetők. A Pro verzió (79 $) PDF OCR-t, CAMT/MT940 támogatást, CLI eszközt, AI interfészt és kiemelt bankkonfigurációkat tartalmaz."}
+    ]
+  },
+  "footer": {
+    "builtBy": "Készítette"
+  },
+  "languageSelector": {
+    "label": "Fordítások a következővel készültek:",
+    "polyglotLink": "Polyglot Kit"
+  },
+  "demo": {
+    "input": "Bemenet",
+    "parsed": "Elemzett",
+    "languages": "68 nyelv"
+  }
+}

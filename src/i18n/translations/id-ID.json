@@ -1,0 +1,88 @@
+{
+  "hero": {
+    "badge": "Parsing Laporan Bank yang Mengutamakan Privasi",
+    "headline1": "Parse Laporan Bank Apa Pun",
+    "headline2": "Dalam Bahasa Apa Pun",
+    "subheadline": "120+ bank. 11 format. 68 bahasa. 70+ mata uang. Satu SDK. Tanpa layanan eksternal. 100% offline.",
+    "cta": "Dapatkan StatementKit — {price}",
+    "ctaSecondary": "Lihat di GitHub",
+    "installComment": "# Instalasi",
+    "callout": "Pembelian satu kali — tanpa langganan, tanpa biaya per panggilan API"
+  },
+  "comparison": {
+    "heading": "Mengapa Bukan Plaid?",
+    "subtitle": "API aggregator menghabiskan $30-200K/tahun, memerlukan konektivitas cloud, dan mengirim data pengguna Anda ke server pihak ketiga. StatementKit berjalan sepenuhnya di infrastruktur Anda.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/tahun", "Bergantung pada cloud", "Data pengguna dikirim ke pihak ketiga", "Harga per koneksi", "Batas kecepatan API"],
+    "ossTitle": "Parser Open-Source",
+    "ossItems": ["Gratis", "Masing-masing 1 format", "Hanya Inggris", "1-5 bank", "Tanpa pemeliharaan"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 satu kali", "11 format, 120+ bank", "68 bahasa, 70+ mata uang", "100% offline, tanpa panggilan API", "Dipelihara secara aktif"]
+  },
+  "formats": {
+    "heading": "11 Format. Satu API.",
+    "items": {
+      "csv": "120+ konfigurasi bank",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "Teks + OCR (68 bahasa)",
+      "qif": "Quicken Interchange",
+      "mt940": "Laporan SWIFT",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "Semua yang Anda Butuhkan",
+    "items": [
+      {"title": "120+ Bank", "desc": "Pra-konfigurasi untuk bank di NA, EU, UK, AU, Asia. Tambahkan milik Anda sendiri saat runtime."},
+      {"title": "100% Offline", "desc": "Tanpa panggilan jaringan. Tanpa kunci API. Tanpa cloud. Data tidak pernah meninggalkan perangkat."},
+      {"title": "68 Bahasa", "desc": "OCR + parsing tanggal dalam Jerman, Prancis, Jepang, Arab, Hindi, Thai & lainnya. 70+ mata uang."},
+      {"title": "OCR Struk", "desc": "Ekstrak merchant, total, pajak, tip, dan item baris dari foto struk."},
+      {"title": "Ekspor Format", "desc": "Konversi antara CSV, OFX, QIF, JSON. Parse format apa pun, ekspor ke format lainnya."},
+      {"title": "Alat CLI", "desc": "npx statementkit parse statement.csv — parsing headless untuk CI/skrip."}
+    ]
+  },
+  "codeExamples": {
+    "heading": "API Sederhana"
+  },
+  "pricing": {
+    "heading": "Satu Harga. Akses Seumur Hidup.",
+    "subtitle": "Tanpa langganan. Tanpa biaya per panggilan API. Tanpa vendor lock-in.",
+    "price": "$79",
+    "priceLabel": "pembayaran satu kali",
+    "items": [
+      "Kode sumber lengkap (TypeScript)",
+      "120+ konfigurasi bank di 6 wilayah",
+      "11 format input + 4 format ekspor",
+      "PDF OCR (68 bahasa)",
+      "OCR foto struk",
+      "Alat CLI + impor batch",
+      "Antarmuka penyedia AI (BYOK)",
+      "432 tes berhasil",
+      "Update seumur hidup via GitHub",
+      "Lisensi MIT — gunakan di proyek apa pun"
+    ],
+    "cta": "Beli StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Pertanyaan yang Sering Diajukan",
+    "items": [
+      {"q": "Apa yang saya dapatkan?", "a": "Kode sumber TypeScript lengkap dikirim melalui akses repo GitHub. 120+ parser bank, 11 handler format, PDF OCR, alat CLI, dan antarmuka penyedia AI. Berlisensi MIT — gunakan di proyek apa pun, komersial atau pribadi."},
+      {"q": "Bagaimana parsing offline bekerja?", "a": "Semua parsing berjalan secara lokal — parsing CSV, OFX, QIF, MT940, dan CAMT tidak memerlukan panggilan jaringan. PDF OCR menggunakan Tesseract.js yang berjalan di browser atau Node.js. Data tidak pernah meninggalkan infrastruktur Anda."},
+      {"q": "Bisakah saya menambahkan bank sendiri?", "a": "Ya. Gunakan registerBank() saat runtime, muat dari file konfigurasi JSON, atau gunakan perintah CLI config suggest untuk mendeteksi kolom secara otomatis dari sampel CSV."},
+      {"q": "Bagaimana dengan fitur AI?", "a": "AI 100% opsional. Semua parsing bekerja tanpanya. Jika Anda ingin deteksi duplikat cerdas atau pengayaan merchant, bawa kunci API Anda sendiri (OpenAI, Anthropic, atau LLM apa pun) melalui antarmuka AIProvider."},
+      {"q": "Apakah ada uji coba gratis?", "a": "Parser inti tersedia sebagai paket npm open-source. Versi Pro ($79) menambahkan PDF OCR, dukungan CAMT/MT940, alat CLI, antarmuka AI, dan konfigurasi bank prioritas."}
+    ]
+  },
+  "footer": {
+    "builtBy": "Dibuat oleh"
+  },
+  "languageSelector": {
+    "label": "Terjemahan dibuat dengan",
+    "polyglotLink": "Polyglot Kit"
+  },
+  "demo": {
+    "input": "Input",
+    "parsed": "Hasil Parse",
+    "languages": "68 bahasa"
+  }
+}

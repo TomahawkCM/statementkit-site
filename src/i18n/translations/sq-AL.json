@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "badge": "Analizim i pasqyrave bankare me privatësi në plan të parë",
+    "headline1": "Analizoni çdo pasqyrë bankare",
+    "headline2": "Në çdo gjuhë",
+    "subheadline": "120+ banka. 11 formate. 68 gjuhë. 70+ monedha. Një SDK. Zero shërbime të jashtme. 100% offline.",
+    "cta": "Merrni StatementKit — {price}",
+    "ctaSecondary": "Shikoni në GitHub",
+    "installComment": "# Instalimi",
+    "callout": "Pagesë e njëhershme — pa abonime, pa tarifa për thirrje API"
+  },
+  "comparison": {
+    "heading": "Pse jo Plaid?",
+    "subtitle": "API-të e agregimit kushtojnë $30-200K/vit, kërkojnë lidhje me cloud dhe dërgojnë të dhënat e përdoruesve tuaj në serverë të palëve të treta. StatementKit funksionon plotësisht në infrastrukturën tuaj.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/vit", "I varur nga cloud", "Të dhënat e përdoruesve dërgohen te palët e treta", "Çmim për lidhje", "Kufizime të normës API"],
+    "ossTitle": "Analizues Open-Source",
+    "ossItems": ["Falas", "1 format secili", "Vetëm anglisht", "1-5 banka", "Pa mirëmbajtje"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 njëherësh", "11 formate, 120+ banka", "68 gjuhë, 70+ monedha", "100% offline, zero thirrje API", "I mirëmbajtur aktivisht"]
+  },
+  "formats": {
+    "heading": "11 formate. Një API.",
+    "items": {
+      "csv": "120+ konfigurime bankash",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "Tekst + OCR (68 gjuhë)",
+      "qif": "Quicken Interchange",
+      "mt940": "Pasqyra SWIFT",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "Gjithçka që ju nevojitet",
+    "items": [
+      {"title": "120+ banka", "desc": "Të parakonfiguruara për banka në Amerikën Veriore, BE, MB, Australi dhe Azi. Shtoni tuajat në kohën e ekzekutimit."},
+      {"title": "100% offline", "desc": "Zero thirrje rrjeti. Pa çelësa API. Pa cloud. Të dhënat nuk largohen kurrë nga pajisja."},
+      {"title": "68 gjuhë", "desc": "OCR + analizim datash në gjermanisht, frëngjisht, japonisht, arabisht, hindi, tajlandisht e më shumë. 70+ monedha."},
+      {"title": "OCR faturash", "desc": "Nxirrni tregtarin, totalin, taksën, bakshishin dhe artikujt nga fotot e faturave."},
+      {"title": "Eksport formatesh", "desc": "Konvertoni midis CSV, OFX, QIF, JSON. Analizoni çdo format, eksportoni në çdo tjetër."},
+      {"title": "Mjet CLI", "desc": "npx statementkit parse statement.csv — analizim headless për CI/skripte."}
+    ]
+  },
+  "codeExamples": {"heading": "API e thjeshtë"},
+  "pricing": {
+    "heading": "Një çmim. Akses i përjetshëm.",
+    "subtitle": "Pa abonime. Pa tarifa për thirrje API. Pa mbyllje nga furnizuesi.",
+    "price": "$79",
+    "priceLabel": "pagesë e njëhershme",
+    "items": [
+      "Kodi burimor i plotë (TypeScript)",
+      "120+ konfigurime bankash në 6 rajone",
+      "11 formate hyrëse + 4 formate eksporti",
+      "PDF OCR (68 gjuhë)",
+      "OCR e fotove të faturave",
+      "Mjet CLI + import në grup",
+      "Ndërfaqe e ofruesit AI (BYOK)",
+      "432 teste kaluese",
+      "Përditësime të përjetshme përmes GitHub",
+      "Licencë MIT — përdoreni në çdo projekt"
+    ],
+    "cta": "Blini StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Pyetje të bëra shpesh",
+    "items": [
+      {"q": "Çfarë marr?", "a": "Kod burimor i plotë TypeScript i dorëzuar përmes aksesit në depon GitHub. 120+ analizues bankash, 11 trajtues formatesh, PDF OCR, mjet CLI dhe ndërfaqe ofruesit AI. Licencë MIT — përdoreni në çdo projekt, komercial ose personal."},
+      {"q": "Si funksionon analizimi offline?", "a": "I gjithë analizimi ekzekutohet lokalisht — CSV, OFX, QIF, MT940 dhe CAMT nuk kërkojnë thirrje rrjeti. PDF OCR përdor Tesseract.js që ekzekutohet në shfletues ose Node.js. Asnjë e dhënë nuk largohet kurrë nga infrastruktura juaj."},
+      {"q": "A mund të shtoj bankën time?", "a": "Po. Përdorni registerBank() në kohën e ekzekutimit, ngarkoni nga skedarë konfigurimi JSON ose përdorni komandën CLI config suggest për të zbuluar automatikisht kolonat nga një CSV shembull."},
+      {"q": "Po veçoritë AI?", "a": "AI është 100% opsionale. I gjithë analizimi funksionon pa të. Nëse doni zbulim inteligjent të dublikatave ose pasurimin e të dhënave të tregtarëve, sillni çelësin tuaj API (OpenAI, Anthropic ose çdo LLM) përmes ndërfaqes AIProvider."},
+      {"q": "Ka provë falas?", "a": "Analizuesit bazë janë të disponueshëm si paketë npm open-source. Versioni Pro ($79) shton PDF OCR, mbështetje CAMT/MT940, mjet CLI, ndërfaqe AI dhe konfigurime prioritare bankash."}
+    ]
+  },
+  "footer": {"builtBy": "Ndërtuar nga"},
+  "languageSelector": {"label": "Përkthimet e ndërtuara me", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Hyrje", "parsed": "Analizuar", "languages": "68 gjuhë"}
+}

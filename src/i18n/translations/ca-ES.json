@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "badge": "Anàlisi d'Extractes Bancaris amb Privacitat Primer",
+    "headline1": "Analitza Qualsevol Extracte Bancari",
+    "headline2": "En Qualsevol Idioma",
+    "subheadline": "120+ bancs. 11 formats. 68 idiomes. 70+ monedes. Un SDK. Sense serveis externs. 100% fora de línia.",
+    "cta": "Obteniu StatementKit — {price}",
+    "ctaSecondary": "Veure a GitHub",
+    "installComment": "# Instal·leu",
+    "callout": "Compra única — sense subscripcions, sense tarifes per crida API"
+  },
+  "comparison": {
+    "heading": "Per Què No Plaid?",
+    "subtitle": "Les API d'agregadors costen $30-200K/any, requereixen connectivitat al núvol i envien les dades dels vostres usuaris a servidors de tercers. StatementKit funciona completament a la vostra infraestructura.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/any", "Dependent del núvol", "Dades d'usuari enviades a tercers", "Preu per connexió", "Límits de velocitat d'API"],
+    "ossTitle": "Analitzadors de Codi Obert",
+    "ossItems": ["Gratuït", "1 format cadascun", "Només anglès", "1-5 bancs", "Sense manteniment"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 única vegada", "11 formats, 120+ bancs", "68 idiomes, 70+ monedes", "100% fora de línia, zero crides API", "Mantingut activament"]
+  },
+  "formats": {
+    "heading": "11 Formats. Una API.",
+    "items": {"csv": "120+ configuracions bancàries", "ofx": "1.x SGML + 2.x XML", "pdf": "Text + OCR (68 idiomes)", "qif": "Quicken Interchange", "mt940": "Extractes SWIFT", "camt": "ISO 20022 (052/053/054)"}
+  },
+  "features": {
+    "heading": "Tot el que Necessiteu",
+    "items": [
+      {"title": "120+ Bancs", "desc": "Preconfigurat per a bancs d'Amèrica del Nord, UE, Regne Unit, Austràlia i Àsia. Afegiu el vostre en temps d'execució."},
+      {"title": "100% Fora de Línia", "desc": "Zero crides de xarxa. Sense claus API. Sense núvol. Les dades mai surten del dispositiu."},
+      {"title": "68 Idiomes", "desc": "OCR + anàlisi de dates en alemany, francès, japonès, àrab, hindi, tailandès i més. 70+ monedes."},
+      {"title": "OCR de Rebuts", "desc": "Extraieu comerciant, total, impostos, propina i línies d'articles de fotos de rebuts."},
+      {"title": "Exportació de Formats", "desc": "Convertiu entre CSV, OFX, QIF, JSON. Analitzeu qualsevol format, exporteu a qualsevol altre."},
+      {"title": "Eina CLI", "desc": "npx statementkit parse statement.csv — anàlisi sense interfície per a CI/scripts."}
+    ]
+  },
+  "codeExamples": {"heading": "API Simple"},
+  "pricing": {
+    "heading": "Un Preu. Accés de Per Vida.",
+    "subtitle": "Sense subscripcions. Sense tarifes per crida API. Sense dependència de proveïdor.",
+    "price": "$79",
+    "priceLabel": "pagament únic",
+    "items": ["Codi font complet (TypeScript)", "120+ configuracions bancàries en 6 regions", "11 formats d'entrada + 4 formats d'exportació", "PDF OCR (68 idiomes)", "OCR de fotos de rebuts", "Eina CLI + importació per lots", "Interfície de proveïdor AI (BYOK)", "432 tests que passen", "Actualitzacions de per vida via GitHub", "Llicència MIT — useu en qualsevol projecte"],
+    "cta": "Compreu StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Preguntes Freqüents",
+    "items": [
+      {"q": "Què obtinc?", "a": "Codi font TypeScript complet lliurat mitjançant accés al repositori GitHub. 120+ analitzadors bancaris, 11 gestors de formats, PDF OCR, eina CLI i interfície de proveïdor AI. Llicència MIT — useu en qualsevol projecte, comercial o personal."},
+      {"q": "Com funciona l'anàlisi fora de línia?", "a": "Tota l'anàlisi s'executa localment — CSV, OFX, QIF, MT940 i CAMT no necessiten cap crida de xarxa. PDF OCR utilitza Tesseract.js que funciona al navegador o Node.js. Cap dada surt mai de la vostra infraestructura."},
+      {"q": "Puc afegir el meu propi banc?", "a": "Sí. Useu registerBank() en temps d'execució, carregueu des de fitxers de configuració JSON o useu l'ordre CLI config suggest per detectar automàticament columnes d'un CSV de mostra."},
+      {"q": "Què passa amb les funcions d'AI?", "a": "L'AI és 100% opcional. Tota l'anàlisi funciona sense. Si voleu detecció intel·ligent de duplicats o enriquiment de comerciants, porteu la vostra pròpia clau API (OpenAI, Anthropic o qualsevol LLM) mitjançant la interfície AIProvider."},
+      {"q": "Hi ha una prova gratuïta?", "a": "Els analitzadors bàsics estan disponibles com a paquet npm de codi obert. La versió Pro ($79) afegeix PDF OCR, suport CAMT/MT940, eina CLI, interfície AI i configuracions bancàries prioritàries."}
+    ]
+  },
+  "footer": {"builtBy": "Creat per"},
+  "languageSelector": {"label": "Traduccions creades amb", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Entrada", "parsed": "Analitzat", "languages": "68 idiomes"}
+}

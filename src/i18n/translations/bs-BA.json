@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "badge": "Privatnost-Prvo Parsiranje Bankovnih Izvoda",
+    "headline1": "Parsirajte Bilo Koji Bankovni Izvod",
+    "headline2": "Na Bilo Kojem Jeziku",
+    "subheadline": "120+ banaka. 11 formata. 68 jezika. 70+ valuta. Jedan SDK. Bez vanjskih servisa. 100% offline.",
+    "cta": "Nabavite StatementKit — {price}",
+    "ctaSecondary": "Pogledajte na GitHub",
+    "installComment": "# Instalirajte",
+    "callout": "Jednokratna kupovina — bez pretplata, bez naknada po API pozivu"
+  },
+  "comparison": {
+    "heading": "Zašto Ne Plaid?",
+    "subtitle": "Agregatorski API-ji koštaju $30-200K/godišnje, zahtijevaju cloud povezanost i šalju podatke vaših korisnika na servere trećih strana. StatementKit radi u potpunosti na vašoj infrastrukturi.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/godišnje", "Ovisan o cloudu", "Korisnički podaci šalju se trećoj strani", "Cijena po vezi", "API ograničenja brzine"],
+    "ossTitle": "Open-Source Parseri",
+    "ossItems": ["Besplatno", "1 format svaki", "Samo engleski", "1-5 banaka", "Bez održavanja"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 jednokratno", "11 formata, 120+ banaka", "68 jezika, 70+ valuta", "100% offline, nula API poziva", "Aktivno održavan"]
+  },
+  "formats": {
+    "heading": "11 Formata. Jedan API.",
+    "items": {"csv": "120+ bankovnih konfiguracija", "ofx": "1.x SGML + 2.x XML", "pdf": "Tekst + OCR (68 jezika)", "qif": "Quicken Interchange", "mt940": "SWIFT izvodi", "camt": "ISO 20022 (052/053/054)"}
+  },
+  "features": {
+    "heading": "Sve Što Vam Treba",
+    "items": [
+      {"title": "120+ Banaka", "desc": "Prethodno konfigurisano za banke u Sjevernoj Americi, EU, UK, Australiji i Aziji. Dodajte svoju banku u toku izvršavanja."},
+      {"title": "100% Offline", "desc": "Nula mrežnih poziva. Bez API ključeva. Bez clouda. Podaci nikada ne napuštaju uređaj."},
+      {"title": "68 Jezika", "desc": "OCR + parsiranje datuma na njemačkom, francuskom, japanskom, arapskom, hindiju, tajlandskom i više. 70+ valuta."},
+      {"title": "OCR Računa", "desc": "Izvucite trgovca, ukupan iznos, porez, napojnicu i stavke iz fotografija računa."},
+      {"title": "Izvoz Formata", "desc": "Konvertujte između CSV, OFX, QIF, JSON. Parsirajte bilo koji format, izvezite u bilo koji drugi."},
+      {"title": "CLI Alat", "desc": "npx statementkit parse statement.csv — parsiranje bez interfejsa za CI/skripte."}
+    ]
+  },
+  "codeExamples": {"heading": "Jednostavan API"},
+  "pricing": {
+    "heading": "Jedna Cijena. Doživotni Pristup.",
+    "subtitle": "Bez pretplata. Bez naknada po API pozivu. Bez zaključavanja za dobavljača.",
+    "price": "$79",
+    "priceLabel": "jednokratno plaćanje",
+    "items": ["Potpuni izvorni kod (TypeScript)", "120+ bankovnih konfiguracija u 6 regija", "11 ulaznih formata + 4 izlazna formata", "PDF OCR (68 jezika)", "OCR fotografija računa", "CLI alat + batch import", "AI provider interfejs (BYOK)", "432 testa prolazi", "Doživotna ažuriranja putem GitHub", "MIT licenca — koristite u bilo kojem projektu"],
+    "cta": "Kupite StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Često Postavljana Pitanja",
+    "items": [
+      {"q": "Šta dobijam?", "a": "Potpuni TypeScript izvorni kod isporučen putem pristupa GitHub repozitoriju. 120+ bankovnih parsera, 11 format handlera, PDF OCR, CLI alat i AI provider interfejs. MIT licenca — koristite u bilo kojem projektu, komercijalnom ili ličnom."},
+      {"q": "Kako funkcioniše offline parsiranje?", "a": "Svo parsiranje se vrši lokalno — CSV, OFX, QIF, MT940 i CAMT parsiranje ne zahtijeva mrežne pozive. PDF OCR koristi Tesseract.js koji radi u pregledniku ili Node.js. Nikakvi podaci nikada ne napuštaju vašu infrastrukturu."},
+      {"q": "Mogu li dodati svoju banku?", "a": "Da. Koristite registerBank() u toku izvršavanja, učitajte iz JSON konfiguracijskih fajlova ili koristite CLI config suggest naredbu za automatsko otkrivanje kolona iz uzorka CSV."},
+      {"q": "Šta sa AI funkcijama?", "a": "AI je 100% opcionalan. Svo parsiranje radi bez njega. Ako želite pametno otkrivanje duplikata ili obogaćivanje podataka o trgovcima, donesite svoj API ključ (OpenAI, Anthropic ili bilo koji LLM) putem AIProvider interfejsa."},
+      {"q": "Postoji li besplatna probna verzija?", "a": "Osnovni parseri su dostupni kao open-source npm paket. Pro verzija ($79) dodaje PDF OCR, CAMT/MT940 podršku, CLI alat, AI interfejs i prioritetne bankovne konfiguracije."}
+    ]
+  },
+  "footer": {"builtBy": "Napravio"},
+  "languageSelector": {"label": "Prijevodi napravljeni sa", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Ulaz", "parsed": "Parsirano", "languages": "68 jezika"}
+}

@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "badge": "Məxfilik-Birinci Bank Hesabatı Təhlili",
+    "headline1": "İstənilən Bank Hesabatını Təhlil Edin",
+    "headline2": "İstənilən Dildə",
+    "subheadline": "120+ bank. 11 format. 68 dil. 70+ valyuta. Bir SDK. Xarici xidmət yoxdur. 100% oflayn.",
+    "cta": "StatementKit alın — {price}",
+    "ctaSecondary": "GitHub-da baxın",
+    "installComment": "# Quraşdırın",
+    "callout": "Birdəfəlik alış — abunə yoxdur, hər API çağırışına görə ödəniş yoxdur"
+  },
+  "comparison": {
+    "heading": "Niyə Plaid Deyil?",
+    "subtitle": "Aqreqator API-lər ildə $30-200K başa gəlir, bulud bağlantısı tələb edir və istifadəçilərinizin məlumatlarını üçüncü tərəf serverlərinə göndərir. StatementKit tamamilə sizin infrastrukturunuzda işləyir.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/ildə", "Buluddan asılı", "İstifadəçi məlumatları 3-cü tərəfə göndərilir", "Hər bağlantıya görə qiymət", "API sürət limitləri"],
+    "ossTitle": "Açıq Mənbə Təhlilçilər",
+    "ossItems": ["Pulsuz", "Hər biri 1 format", "Yalnız İngiliscə", "1-5 bank", "Texniki dəstək yoxdur"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 birdəfəlik", "11 format, 120+ bank", "68 dil, 70+ valyuta", "100% oflayn, sıfır API çağırışı", "Aktiv dəstək"]
+  },
+  "formats": {
+    "heading": "11 Format. Bir API.",
+    "items": {"csv": "120+ bank konfiqurasiyası", "ofx": "1.x SGML + 2.x XML", "pdf": "Mətn + OCR (68 dil)", "qif": "Quicken Interchange", "mt940": "SWIFT hesabatları", "camt": "ISO 20022 (052/053/054)"}
+  },
+  "features": {
+    "heading": "Sizə Lazım Olan Hər Şey",
+    "items": [
+      {"title": "120+ Bank", "desc": "Şimali Amerika, Avropa, Böyük Britaniya, Avstraliya, Asiya banklarına əvvəlcədən konfiqurasiya edilib. Öz bankınızı işləmə zamanı əlavə edin."},
+      {"title": "100% Oflayn", "desc": "Sıfır şəbəkə çağırışı. API açarı yoxdur. Bulud yoxdur. Məlumatlar heç vaxt cihazı tərk etmir."},
+      {"title": "68 Dil", "desc": "Alman, Fransız, Yapon, Ərəb, Hindi, Tay və digər dillərdə OCR + tarix təhlili. 70+ valyuta."},
+      {"title": "Qəbz OCR", "desc": "Qəbz fotolarından satıcı, ümumi məbləğ, vergi, bahşiş və sətir elementlərini çıxarın."},
+      {"title": "Format İxracı", "desc": "CSV, OFX, QIF, JSON arasında çevirin. İstənilən formatı təhlil edin, istənilən digərinə ixrac edin."},
+      {"title": "CLI Aləti", "desc": "npx statementkit parse statement.csv — CI/skriptlər üçün başsız təhlil."}
+    ]
+  },
+  "codeExamples": {"heading": "Sadə API"},
+  "pricing": {
+    "heading": "Bir Qiymət. Ömürlük Giriş.",
+    "subtitle": "Abunə yoxdur. Hər API çağırışına görə ödəniş yoxdur. Satıcı bağımlılığı yoxdur.",
+    "price": "$79",
+    "priceLabel": "birdəfəlik ödəniş",
+    "items": ["Tam mənbə kodu (TypeScript)", "6 regionda 120+ bank konfiqurasiyası", "11 giriş formatı + 4 ixrac formatı", "PDF OCR (68 dil)", "Qəbz fotosu OCR", "CLI aləti + toplu idxal", "AI provayder interfeysi (BYOK)", "432 test keçir", "GitHub vasitəsilə ömürlük yeniləmələr", "MIT lisenziyası — istənilən layihədə istifadə edin"],
+    "cta": "StatementKit alın — {price}"
+  },
+  "faq": {
+    "heading": "Tez-tez Verilən Suallar",
+    "items": [
+      {"q": "Nə alıram?", "a": "GitHub repo girişi vasitəsilə tam TypeScript mənbə kodu təqdim olunur. 120+ bank təhlilçisi, 11 format idarəçisi, PDF OCR, CLI aləti və AI provayder interfeysi. MIT lisenziyalı — istənilən layihədə, kommersiya və ya şəxsi istifadə edin."},
+      {"q": "Oflayn təhlil necə işləyir?", "a": "Bütün təhlil yerli olaraq aparılır — CSV, OFX, QIF, MT940 və CAMT təhlili sıfır şəbəkə çağırışı tələb edir. PDF OCR brauzerdə və ya Node.js-də işləyən Tesseract.js istifadə edir. Heç bir məlumat infrastrukturunuzu tərk etmir."},
+      {"q": "Öz bankımı əlavə edə bilərəm?", "a": "Bəli. İşləmə zamanı registerBank() istifadə edin, JSON konfiqurasiya fayllarından yükləyin və ya nümunə CSV-dən sütunları avtomatik aşkar etmək üçün CLI config suggest əmrini istifadə edin."},
+      {"q": "AI xüsusiyyətləri haqqında nə demək olar?", "a": "AI 100% isteğe bağlıdır. Bütün təhlil onsuz işləyir. Ağıllı dublikat aşkarlama və ya satıcı zənginləşdirməsi istəyirsinizsə, AIProvider interfeysi vasitəsilə öz API açarınızı (OpenAI, Anthropic və ya istənilən LLM) gətirin."},
+      {"q": "Pulsuz sınaq varmı?", "a": "Əsas təhlilçilər açıq mənbə npm paketi olaraq mövcuddur. Pro versiya ($79) PDF OCR, CAMT/MT940 dəstəyi, CLI aləti, AI interfeysi və prioritet bank konfiqurasiyaları əlavə edir."}
+    ]
+  },
+  "footer": {"builtBy": "Hazırladı"},
+  "languageSelector": {"label": "Tərcümələr hazırlandı", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Giriş", "parsed": "Təhlil edilmiş", "languages": "68 dil"}
+}

@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "badge": "Gizlilik Öncelikli Banka Hesap Özeti Ayrıştırma",
+    "headline1": "Herhangi Bir Banka Hesap Özetini Ayrıştırın",
+    "headline2": "Herhangi Bir Dilde",
+    "subheadline": "120+ banka. 11 format. 68 dil. 70+ para birimi. Tek SDK. Sıfır harici hizmet. 100% çevrimdışı.",
+    "cta": "StatementKit Edinin — {price}",
+    "ctaSecondary": "GitHub'da Görüntüle",
+    "installComment": "# Kurulum",
+    "callout": "Tek seferlik ödeme — abonelik yok, API çağrısı başına ücret yok"
+  },
+  "comparison": {
+    "heading": "Neden Plaid Değil?",
+    "subtitle": "Toplayıcı API'ler yılda $30-200K tutar, bulut bağlantısı gerektirir ve kullanıcılarınızın verilerini üçüncü taraf sunuculara gönderir. StatementKit tamamen sizin altyapınızda çalışır.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/yıl", "Buluta bağımlı", "Kullanıcı verileri üçüncü taraflara gönderilir", "Bağlantı başına fiyatlandırma", "API hız sınırları"],
+    "ossTitle": "Open-Source Ayrıştırıcılar",
+    "ossItems": ["Ücretsiz", "Her biri 1 format", "Yalnızca İngilizce", "1-5 banka", "Bakım yok"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 tek seferlik", "11 format, 120+ banka", "68 dil, 70+ para birimi", "100% çevrimdışı, sıfır API çağrısı", "Aktif olarak bakımı yapılıyor"]
+  },
+  "formats": {
+    "heading": "11 Format. Tek API.",
+    "items": {
+      "csv": "120+ banka yapılandırması",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "Metin + OCR (68 dil)",
+      "qif": "Quicken Interchange",
+      "mt940": "SWIFT hesap özetleri",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "İhtiyacınız Olan Her Şey",
+    "items": [
+      {"title": "120+ Banka", "desc": "Kuzey Amerika, AB, İngiltere, Avustralya ve Asya'daki bankalar için önceden yapılandırılmış. Çalışma zamanında kendinizinkini ekleyin."},
+      {"title": "100% Çevrimdışı", "desc": "Sıfır ağ çağrısı. API anahtarı yok. Bulut yok. Veriler asla cihazdan çıkmaz."},
+      {"title": "68 Dil", "desc": "Almanca, Fransızca, Japonca, Arapça, Hintçe, Tayca ve daha fazlasında OCR + tarih ayrıştırma. 70+ para birimi."},
+      {"title": "Fiş OCR", "desc": "Fiş fotoğraflarından satıcı, toplam, vergi, bahşiş ve kalem detaylarını çıkarın."},
+      {"title": "Format Dışa Aktarma", "desc": "CSV, OFX, QIF, JSON arasında dönüştürün. Herhangi bir formatı ayrıştırın, herhangi bir diğerine dışa aktarın."},
+      {"title": "CLI Aracı", "desc": "npx statementkit parse statement.csv — CI/betikler için başsız ayrıştırma."}
+    ]
+  },
+  "codeExamples": {"heading": "Basit API"},
+  "pricing": {
+    "heading": "Tek Fiyat. Ömür Boyu Erişim.",
+    "subtitle": "Abonelik yok. API çağrısı başına ücret yok. Satıcıya bağımlılık yok.",
+    "price": "$79",
+    "priceLabel": "tek seferlik ödeme",
+    "items": [
+      "Tam kaynak kodu (TypeScript)",
+      "6 bölgede 120+ banka yapılandırması",
+      "11 giriş formatı + 4 dışa aktarma formatı",
+      "PDF OCR (68 dil)",
+      "Fiş fotoğrafı OCR",
+      "CLI aracı + toplu içe aktarma",
+      "AI sağlayıcı arayüzü (BYOK)",
+      "432 test geçiyor",
+      "GitHub üzerinden ömür boyu güncellemeler",
+      "MIT lisansı — herhangi bir projede kullanın"
+    ],
+    "cta": "StatementKit Satın Alın — {price}"
+  },
+  "faq": {
+    "heading": "Sıkça Sorulan Sorular",
+    "items": [
+      {"q": "Ne alıyorum?", "a": "GitHub repo erişimi ile teslim edilen tam TypeScript kaynak kodu. 120+ banka ayrıştırıcısı, 11 format işleyici, PDF OCR, CLI aracı ve AI sağlayıcı arayüzü. MIT lisanslı — ticari veya kişisel herhangi bir projede kullanın."},
+      {"q": "Çevrimdışı ayrıştırma nasıl çalışır?", "a": "Tüm ayrıştırma yerel olarak çalışır — CSV, OFX, QIF, MT940 ve CAMT ayrıştırması sıfır ağ çağrısı gerektirir. PDF OCR, tarayıcıda veya Node.js'de çalışan Tesseract.js kullanır. Veriler asla altyapınızdan çıkmaz."},
+      {"q": "Kendi bankamı ekleyebilir miyim?", "a": "Evet. Çalışma zamanında registerBank() kullanın, JSON yapılandırma dosyalarından yükleyin veya örnek bir CSV'den sütunları otomatik algılamak için CLI config suggest komutunu kullanın."},
+      {"q": "AI özellikleri ne durumda?", "a": "AI %100 isteğe bağlıdır. Tüm ayrıştırma onsuz çalışır. Akıllı kopya algılama veya satıcı veri zenginleştirme istiyorsanız, AIProvider arayüzü üzerinden kendi API anahtarınızı (OpenAI, Anthropic veya herhangi bir LLM) getirin."},
+      {"q": "Ücretsiz deneme var mı?", "a": "Temel ayrıştırıcılar open-source npm paketi olarak mevcuttur. Pro sürümü ($79) PDF OCR, CAMT/MT940 desteği, CLI aracı, AI arayüzü ve öncelikli banka yapılandırmaları ekler."}
+    ]
+  },
+  "footer": {"builtBy": "Yapan"},
+  "languageSelector": {"label": "Çeviriler şununla oluşturuldu", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Girdi", "parsed": "Ayrıştırıldı", "languages": "68 dil"}
+}

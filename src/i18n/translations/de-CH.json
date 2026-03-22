@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "badge": "Datenschutz-Erstes Kontoauszug-Parsing",
+    "headline1": "Jeden Kontoauszug Parsen",
+    "headline2": "In Jeder Sprache",
+    "subheadline": "120+ Banken. 11 Formate. 68 Sprachen. 70+ Währungen. Ein SDK. Keine externen Dienste. 100% offline.",
+    "cta": "StatementKit Holen — {price}",
+    "ctaSecondary": "Auf GitHub ansehen",
+    "installComment": "# Installieren",
+    "callout": "Einmaliger Kauf — keine Abos, keine Gebühren pro API-Aufruf"
+  },
+  "comparison": {
+    "heading": "Warum Nicht Plaid?",
+    "subtitle": "Aggregator-APIs kosten $30-200K/Jahr, benötigen Cloud-Anbindung und senden die Daten Ihrer Nutzer an Drittanbieter-Server. StatementKit läuft vollständig auf Ihrer Infrastruktur.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/Jahr", "Cloud-abhängig", "Nutzerdaten werden an Dritte gesendet", "Preis pro Verbindung", "API-Ratenlimits"],
+    "ossTitle": "Open-Source-Parser",
+    "ossItems": ["Gratis", "Je 1 Format", "Nur Englisch", "1-5 Banken", "Keine Wartung"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 einmalig", "11 Formate, 120+ Banken", "68 Sprachen, 70+ Währungen", "100% offline, null API-Aufrufe", "Aktiv gewartet"]
+  },
+  "formats": {
+    "heading": "11 Formate. Ein API.",
+    "items": {"csv": "120+ Bankkonfigurationen", "ofx": "1.x SGML + 2.x XML", "pdf": "Text + OCR (68 Sprachen)", "qif": "Quicken Interchange", "mt940": "SWIFT-Kontoauszüge", "camt": "ISO 20022 (052/053/054)"}
+  },
+  "features": {
+    "heading": "Alles, Was Sie Brauchen",
+    "items": [
+      {"title": "120+ Banken", "desc": "Vorkonfiguriert für Banken in Nordamerika, EU, UK, Australien und Asien. Fügen Sie Ihre eigene zur Laufzeit hinzu."},
+      {"title": "100% Offline", "desc": "Null Netzwerkaufrufe. Keine API-Schlüssel. Keine Cloud. Daten verlassen nie das Gerät."},
+      {"title": "68 Sprachen", "desc": "OCR + Datumsparsing in Deutsch, Französisch, Japanisch, Arabisch, Hindi, Thai und mehr. 70+ Währungen."},
+      {"title": "Beleg-OCR", "desc": "Extrahieren Sie Händler, Gesamtbetrag, Steuer, Trinkgeld und Einzelposten aus Belegfotos."},
+      {"title": "Format-Export", "desc": "Konvertieren Sie zwischen CSV, OFX, QIF, JSON. Parsen Sie jedes Format, exportieren Sie in jedes andere."},
+      {"title": "CLI-Tool", "desc": "npx statementkit parse statement.csv — Headless-Parsing für CI/Skripts."}
+    ]
+  },
+  "codeExamples": {"heading": "Einfaches API"},
+  "pricing": {
+    "heading": "Ein Preis. Lebenslanger Zugang.",
+    "subtitle": "Keine Abos. Keine Gebühren pro API-Aufruf. Kein Vendor-Lock-in.",
+    "price": "$79",
+    "priceLabel": "einmalige Zahlung",
+    "items": ["Vollständiger Quellcode (TypeScript)", "120+ Bankkonfigurationen in 6 Regionen", "11 Eingabeformate + 4 Exportformate", "PDF OCR (68 Sprachen)", "Belegfoto-OCR", "CLI-Tool + Batch-Import", "AI-Anbieter-Schnittstelle (BYOK)", "432 Tests bestanden", "Lebenslange Updates über GitHub", "MIT-Lizenz — in jedem Projekt einsetzbar"],
+    "cta": "StatementKit Kaufen — {price}"
+  },
+  "faq": {
+    "heading": "Häufig Gestellte Fragen",
+    "items": [
+      {"q": "Was erhalte ich?", "a": "Vollständiger TypeScript-Quellcode, bereitgestellt über GitHub-Repository-Zugang. 120+ Bank-Parser, 11 Format-Handler, PDF OCR, CLI-Tool und AI-Anbieter-Schnittstelle. MIT-lizenziert — in jedem Projekt einsetzbar, kommerziell oder privat."},
+      {"q": "Wie funktioniert Offline-Parsing?", "a": "Sämtliches Parsing läuft lokal — CSV, OFX, QIF, MT940 und CAMT-Parsing benötigt null Netzwerkaufrufe. PDF OCR verwendet Tesseract.js, das im Browser oder Node.js läuft. Keine Daten verlassen je Ihre Infrastruktur."},
+      {"q": "Kann ich meine eigene Bank hinzufügen?", "a": "Ja. Verwenden Sie registerBank() zur Laufzeit, laden Sie aus JSON-Konfigurationsdateien oder verwenden Sie den CLI-Befehl config suggest, um Spalten automatisch aus einer Beispiel-CSV zu erkennen."},
+      {"q": "Was ist mit AI-Funktionen?", "a": "AI ist 100% optional. Sämtliches Parsing funktioniert ohne. Wenn Sie intelligente Duplikaterkennung oder Händleranreicherung wünschen, bringen Sie Ihren eigenen API-Schlüssel (OpenAI, Anthropic oder jedes LLM) über die AIProvider-Schnittstelle mit."},
+      {"q": "Gibt es eine kostenlose Testversion?", "a": "Die Kern-Parser sind als Open-Source-npm-Paket verfügbar. Die Pro-Version ($79) ergänzt PDF OCR, CAMT/MT940-Unterstützung, CLI-Tool, AI-Schnittstelle und priorisierte Bankkonfigurationen."}
+    ]
+  },
+  "footer": {"builtBy": "Erstellt von"},
+  "languageSelector": {"label": "Übersetzungen erstellt mit", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Eingabe", "parsed": "Geparst", "languages": "68 Sprachen"}
+}

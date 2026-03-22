@@ -1,0 +1,88 @@
+{
+  "hero": {
+    "badge": "프라이버시 우선 은행 명세서 파싱",
+    "headline1": "모든 은행 명세서를 파싱",
+    "headline2": "모든 언어로",
+    "subheadline": "120개 이상의 은행. 11가지 형식. 68개 언어. 70개 이상의 통화. 하나의 SDK. 외부 서비스 제로. 100% 오프라인.",
+    "cta": "StatementKit 구매하기 — {price}",
+    "ctaSecondary": "GitHub에서 보기",
+    "installComment": "# 설치",
+    "callout": "일회성 구매 — 구독 없음, API 호출당 요금 없음"
+  },
+  "comparison": {
+    "heading": "왜 Plaid가 아닌가?",
+    "subtitle": "애그리게이터 API는 연간 $30-200K의 비용이 들고, 클라우드 연결이 필요하며, 사용자 데이터를 서드파티 서버로 전송합니다. StatementKit은 귀하의 인프라에서 완전히 실행됩니다.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["연간 $30-200K", "클라우드 의존", "사용자 데이터가 서드파티로", "연결당 요금", "API 속도 제한"],
+    "ossTitle": "오픈소스 파서",
+    "ossItems": ["무료", "각 1가지 형식", "영어만", "1-5개 은행", "유지보수 없음"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 일회성", "11가지 형식, 120개 이상 은행", "68개 언어, 70개 이상 통화", "100% 오프라인, API 호출 제로", "활발히 유지보수"]
+  },
+  "formats": {
+    "heading": "11가지 형식. 하나의 API.",
+    "items": {
+      "csv": "120개 이상의 은행 설정",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "텍스트 + OCR (68개 언어)",
+      "qif": "Quicken Interchange",
+      "mt940": "SWIFT 명세서",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "필요한 모든 것",
+    "items": [
+      {"title": "120개 이상의 은행", "desc": "북미, EU, 영국, 호주, 아시아의 은행에 사전 구성됨. 런타임에 직접 추가 가능."},
+      {"title": "100% 오프라인", "desc": "네트워크 호출 제로. API 키 불필요. 클라우드 불필요. 데이터는 절대 기기를 떠나지 않습니다."},
+      {"title": "68개 언어", "desc": "독일어, 프랑스어, 일본어, 아랍어, 힌디어, 태국어 등으로 OCR + 날짜 파싱. 70개 이상의 통화."},
+      {"title": "영수증 OCR", "desc": "영수증 사진에서 가맹점, 합계, 세금, 팁, 항목을 추출."},
+      {"title": "형식 내보내기", "desc": "CSV, OFX, QIF, JSON 간 변환. 모든 형식을 파싱하고, 모든 형식으로 내보내기."},
+      {"title": "CLI 도구", "desc": "npx statementkit parse statement.csv — CI/스크립트용 헤드리스 파싱."}
+    ]
+  },
+  "codeExamples": {
+    "heading": "간단한 API"
+  },
+  "pricing": {
+    "heading": "하나의 가격. 평생 접근.",
+    "subtitle": "구독 없음. API 호출당 요금 없음. 벤더 종속 없음.",
+    "price": "$79",
+    "priceLabel": "일회성 결제",
+    "items": [
+      "전체 소스 코드 (TypeScript)",
+      "6개 지역 120개 이상의 은행 설정",
+      "11가지 입력 형식 + 4가지 내보내기 형식",
+      "PDF OCR (68개 언어)",
+      "영수증 사진 OCR",
+      "CLI 도구 + 일괄 가져오기",
+      "AI 프로바이더 인터페이스 (BYOK)",
+      "432개 테스트 통과",
+      "GitHub를 통한 평생 업데이트",
+      "MIT 라이선스 — 모든 프로젝트에서 사용 가능"
+    ],
+    "cta": "StatementKit 구매 — {price}"
+  },
+  "faq": {
+    "heading": "자주 묻는 질문",
+    "items": [
+      {"q": "무엇을 받나요?", "a": "GitHub 리포지토리 접근으로 제공되는 전체 TypeScript 소스 코드. 120개 이상의 은행 파서, 11개 형식 핸들러, PDF OCR, CLI 도구, AI 프로바이더 인터페이스. MIT 라이선스 — 상업적이든 개인적이든 모든 프로젝트에서 사용 가능."},
+      {"q": "오프라인 파싱은 어떻게 작동하나요?", "a": "모든 파싱은 로컬에서 실행됩니다 — CSV, OFX, QIF, MT940, CAMT 파싱은 네트워크 호출이 필요 없습니다. PDF OCR은 브라우저 또는 Node.js에서 실행되는 Tesseract.js를 사용합니다. 데이터는 절대 귀하의 인프라를 떠나지 않습니다."},
+      {"q": "내 은행을 추가할 수 있나요?", "a": "네. 런타임에 registerBank()를 사용하거나, JSON 설정 파일에서 로드하거나, CLI config suggest 명령으로 샘플 CSV에서 컬럼을 자동 감지할 수 있습니다."},
+      {"q": "AI 기능은 어떤가요?", "a": "AI는 100% 선택 사항입니다. 모든 파싱은 AI 없이 작동합니다. 스마트 중복 감지나 가맹점 보강이 필요하면, AIProvider 인터페이스를 통해 자체 API 키(OpenAI, Anthropic, 또는 모든 LLM)를 가져오세요."},
+      {"q": "무료 체험이 있나요?", "a": "핵심 파서는 오픈소스 npm 패키지로 제공됩니다. Pro 버전($79)에는 PDF OCR, CAMT/MT940 지원, CLI 도구, AI 인터페이스, 우선 은행 설정이 추가됩니다."}
+    ]
+  },
+  "footer": {
+    "builtBy": "제작"
+  },
+  "languageSelector": {
+    "label": "번역 제작",
+    "polyglotLink": "Polyglot Kit"
+  },
+  "demo": {
+    "input": "입력",
+    "parsed": "파싱됨",
+    "languages": "68개 언어"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "badge": "Razčlenjevanje bančnih izpiskov z zasebnostjo na prvem mestu",
+    "headline1": "Razčlenite katerikoli bančni izpisek",
+    "headline2": "V kateremkoli jeziku",
+    "subheadline": "120+ bank. 11 formatov. 68 jezikov. 70+ valut. En SDK. Nič zunanjih storitev. 100% brez povezave.",
+    "cta": "Pridobite StatementKit — {price}",
+    "ctaSecondary": "Oglejte si na GitHub",
+    "installComment": "# Namestitev",
+    "callout": "Enkratno plačilo — brez naročnin, brez pristojbin za klice API"
+  },
+  "comparison": {
+    "heading": "Zakaj ne Plaid?",
+    "subtitle": "Agregacijski API-ji stanejo $30-200K/leto, zahtevajo oblačno povezljivost in pošiljajo podatke vaših uporabnikov na strežnike tretjih oseb. StatementKit deluje v celoti na vaši infrastrukturi.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/leto", "Odvisen od oblaka", "Uporabniški podatki poslani tretjim osebam", "Cena na povezavo", "Omejitve hitrosti API"],
+    "ossTitle": "Open-Source razčlenjevalniki",
+    "ossItems": ["Brezplačno", "1 format vsak", "Samo angleščina", "1-5 bank", "Brez vzdrževanja"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 enkratno", "11 formatov, 120+ bank", "68 jezikov, 70+ valut", "100% brez povezave, nič klicev API", "Aktivno vzdrževan"]
+  },
+  "formats": {
+    "heading": "11 formatov. En API.",
+    "items": {
+      "csv": "120+ konfiguracij bank",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "Besedilo + OCR (68 jezikov)",
+      "qif": "Quicken Interchange",
+      "mt940": "Izpiski SWIFT",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "Vse, kar potrebujete",
+    "items": [
+      {"title": "120+ bank", "desc": "Prednastavljeno za banke v Severni Ameriki, EU, Veliki Britaniji, Avstraliji in Aziji. Dodajte svoje med izvajanjem."},
+      {"title": "100% brez povezave", "desc": "Nič omrežnih klicev. Brez ključev API. Brez oblaka. Podatki nikoli ne zapustijo naprave."},
+      {"title": "68 jezikov", "desc": "OCR + razčlenjevanje datumov v nemščini, francoščini, japonščini, arabščini, hindijščini, tajščini in več. 70+ valut."},
+      {"title": "OCR računov", "desc": "Izvlecite trgovca, skupno vsoto, davek, napitnino in postavke iz fotografij računov."},
+      {"title": "Izvoz formatov", "desc": "Pretvarjajte med CSV, OFX, QIF, JSON. Razčlenite katerikoli format, izvozite v kateregakoli drugega."},
+      {"title": "Orodje CLI", "desc": "npx statementkit parse statement.csv — razčlenjevanje brez glave za CI/skripte."}
+    ]
+  },
+  "codeExamples": {"heading": "Preprost API"},
+  "pricing": {
+    "heading": "Ena cena. Doživljenjski dostop.",
+    "subtitle": "Brez naročnin. Brez pristojbin za klice API. Brez odvisnosti od ponudnika.",
+    "price": "$79",
+    "priceLabel": "enkratno plačilo",
+    "items": [
+      "Popolna izvorna koda (TypeScript)",
+      "120+ konfiguracij bank v 6 regijah",
+      "11 vhodnih formatov + 4 izvozni formati",
+      "PDF OCR (68 jezikov)",
+      "OCR fotografij računov",
+      "Orodje CLI + paketni uvoz",
+      "Vmesnik ponudnika AI (BYOK)",
+      "432 testov uspešnih",
+      "Doživljenjske posodobitve prek GitHub",
+      "Licenca MIT — uporabite v kateremkoli projektu"
+    ],
+    "cta": "Kupite StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Pogosto zastavljena vprašanja",
+    "items": [
+      {"q": "Kaj dobim?", "a": "Popolno izvorno kodo TypeScript, dostavljeno prek dostopa do GitHub repozitorija. 120+ bančnih razčlenjevalnikov, 11 obdelovalcev formatov, PDF OCR, orodje CLI in vmesnik ponudnika AI. Licenca MIT — uporabite v kateremkoli projektu, komercialnem ali osebnem."},
+      {"q": "Kako deluje razčlenjevanje brez povezave?", "a": "Vso razčlenjevanje poteka lokalno — CSV, OFX, QIF, MT940 in CAMT razčlenjevanje ne potrebuje omrežnih klicev. PDF OCR uporablja Tesseract.js, ki deluje v brskalniku ali Node.js. Podatki nikoli ne zapustijo vaše infrastrukture."},
+      {"q": "Ali lahko dodam svojo banko?", "a": "Da. Uporabite registerBank() med izvajanjem, naložite iz konfiguracijskih datotek JSON ali uporabite ukaz CLI config suggest za samodejno zaznavanje stolpcev iz vzorčnega CSV."},
+      {"q": "Kaj pa funkcije AI?", "a": "AI je 100% neobvezen. Vso razčlenjevanje deluje brez njega. Če želite pametno zaznavanje duplikatov ali obogatitev podatkov o trgovcih, prinesite svoj ključ API (OpenAI, Anthropic ali katerikoli LLM) prek vmesnika AIProvider."},
+      {"q": "Ali je na voljo brezplačen preizkus?", "a": "Osnovni razčlenjevalniki so na voljo kot open-source npm paket. Različica Pro ($79) dodaja PDF OCR, podporo CAMT/MT940, orodje CLI, vmesnik AI in prednostne konfiguracije bank."}
+    ]
+  },
+  "footer": {"builtBy": "Izdelal"},
+  "languageSelector": {"label": "Prevodi izdelani z", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Vnos", "parsed": "Razčlenjeno", "languages": "68 jezikov"}
+}

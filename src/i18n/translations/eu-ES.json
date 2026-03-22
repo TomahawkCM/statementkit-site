@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "badge": "Pribatutasunean oinarritutako banku-laburpenen analisia",
+    "headline1": "Analizatu edozein banku-laburpen",
+    "headline2": "Edozein hizkuntzatan",
+    "subheadline": "120+ banku. 11 formatu. 68 hizkuntza. 70+ moneta. SDK bat. Zero kanpo-zerbitzu. %100 lineaz kanpo.",
+    "cta": "Lortu StatementKit — {price}",
+    "ctaSecondary": "Ikusi GitHuben",
+    "installComment": "# Instalatu",
+    "callout": "Ordainketa bakarra — harpiderik gabe, API dei bakoitzeko tarifarik gabe"
+  },
+  "comparison": {
+    "heading": "Zergatik ez Plaid?",
+    "subtitle": "Agregatzaileen API-ek $30-200K/urteko kostatzen dute, hodeiko konektibitatea eskatzen dute eta zure erabiltzaileen datuak hirugarrenen zerbitzarietara bidaltzen dituzte. StatementKit zure azpiegituran soilik exekutatzen da.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/urteko", "Hodeiaren menpeko", "Erabiltzaile-datuak hirugarrenei bidalita", "Konexio bakoitzeko prezioa", "API mugak"],
+    "ossTitle": "Kode irekiko parserak",
+    "ossItems": ["Doakoa", "Formatu 1 bakoitzeko", "Ingelesez soilik", "1-5 banku", "Mantentzerik gabe"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 behin bakarrik", "11 formatu, 120+ banku", "68 hizkuntza, 70+ moneta", "%100 lineaz kanpo, zero API dei", "Aktiboki mantendua"]
+  },
+  "formats": {
+    "heading": "11 formatu. API bat.",
+    "items": {
+      "csv": "120+ banku-konfigurazio",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "Testua + OCR (68 hizkuntza)",
+      "qif": "Quicken Interchange",
+      "mt940": "SWIFT laburpenak",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "Behar duzun guztia",
+    "items": [
+      {"title": "120+ banku", "desc": "Aurrekonfiguratuta Ipar Amerika, EB, EB, AU, Asiako bankuentzat. Gehitu zureak exekuzio-denboran."},
+      {"title": "%100 lineaz kanpo", "desc": "Zero sare-dei. API gako gabe. Hodeirik gabe. Datuak ez dira inoiz gailutik ateratzen."},
+      {"title": "68 hizkuntza", "desc": "OCR + data-analisia alemanez, frantsesez, japonieraz, arabieraz, hindiz, thailandieraz eta gehiago. 70+ moneta."},
+      {"title": "Tiket OCR", "desc": "Atera merkataria, guztira, zerga, propina eta lerro-elementuak tiketen argazkietatik."},
+      {"title": "Formatu esportazioa", "desc": "Bihurtu CSV, OFX, QIF, JSON artean. Analizatu edozein formatu, esportatu beste edozeinetara."},
+      {"title": "CLI tresna", "desc": "npx statementkit parse statement.csv — interfaze gabeko analisia CI/scriptentzat."}
+    ]
+  },
+  "codeExamples": {"heading": "API sinplea"},
+  "pricing": {
+    "heading": "Prezio bat. Bizitzako sarbidea.",
+    "subtitle": "Harpiderik gabe. API dei bakoitzeko tarifarik gabe. Hornitzaile-blokeorik gabe.",
+    "price": "$79",
+    "priceLabel": "ordainketa bakarra",
+    "items": [
+      "Iturburu-kode osoa (TypeScript)",
+      "120+ banku-konfigurazio 6 eskualdetan",
+      "11 sarrera-formatu + 4 esportazio-formatu",
+      "PDF OCR (68 hizkuntza)",
+      "Tiket argazki OCR",
+      "CLI tresna + sorta-inportazioa",
+      "AI hornitzaile interfazea (BYOK)",
+      "432 test gaindituta",
+      "Bizitzako eguneratzeak GitHub bidez",
+      "MIT lizentzia — erabili edozein proiektutan"
+    ],
+    "cta": "Erosi StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Maiz egiten diren galderak",
+    "items": [
+      {"q": "Zer jasotzen dut?", "a": "TypeScript iturburu-kode osoa GitHub biltegi sarbidearen bidez entregatua. 120+ banku-parser, 11 formatu-kudeatzaile, PDF OCR, CLI tresna eta AI hornitzaile interfazea. MIT lizentziarekin — erabili edozein proiektutan, komertzialean edo pertsonalean."},
+      {"q": "Nola funtzionatzen du lineaz kanpoko analisiak?", "a": "Analisi guztia lokalki exekutatzen da — CSV, OFX, QIF, MT940 eta CAMT analisiak zero sare-dei behar ditu. PDF OCR-k Tesseract.js erabiltzen du, nabigatzailean edo Node.js-en exekutatzen dena. Datuak ez dira inoiz zure azpiegituratik ateratzen."},
+      {"q": "Nire bankua gehitu dezaket?", "a": "Bai. Erabili registerBank() exekuzio-denboran, kargatu JSON konfigurazio-fitxategietatik, edo erabili CLI config suggest komandoa zutabeak automatikoki detektatzeko lagin CSV batetik."},
+      {"q": "Zer gertatzen da AI funtzioekin?", "a": "AI %100 aukerakoa da. Analisi guztia hori gabe funtzionatzen du. Bikoiztuen detekzio adimentsua edo merkatari aberastea nahi baduzu, ekarri zure API gakoa (OpenAI, Anthropic, edo edozein LLM) AIProvider interfazearen bidez."},
+      {"q": "Doako proba-aldirik badago?", "a": "Oinarrizko parserak kode irekiko npm pakete gisa daude eskuragarri. Pro bertsioak ($79) PDF OCR, CAMT/MT940 euskarria, CLI tresna, AI interfazea eta lehentasunezko banku-konfigurazioak gehitzen ditu."}
+    ]
+  },
+  "footer": {"builtBy": "Egilea"},
+  "languageSelector": {"label": "Itzulpenak sortuta honekin", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Sarrera", "parsed": "Analizatua", "languages": "68 hizkuntza"}
+}

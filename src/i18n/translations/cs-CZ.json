@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "badge": "Parsování Bankovních Výpisů s Ochranou Soukromí",
+    "headline1": "Parsujte Jakýkoli Bankovní Výpis",
+    "headline2": "V Jakémkoli Jazyce",
+    "subheadline": "120+ bank. 11 formátů. 68 jazyků. 70+ měn. Jedno SDK. Žádné externí služby. 100% offline.",
+    "cta": "Získejte StatementKit — {price}",
+    "ctaSecondary": "Zobrazit na GitHub",
+    "installComment": "# Instalace",
+    "callout": "Jednorázový nákup — žádné předplatné, žádné poplatky za API volání"
+  },
+  "comparison": {
+    "heading": "Proč Ne Plaid?",
+    "subtitle": "Agregátorová API stojí $30-200K/rok, vyžadují cloudové připojení a posílají data vašich uživatelů na servery třetích stran. StatementKit běží zcela na vaší infrastruktuře.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/rok", "Závislost na cloudu", "Uživatelská data odesílána třetím stranám", "Cena za připojení", "Limity API rychlosti"],
+    "ossTitle": "Open-Source Parsery",
+    "ossItems": ["Zdarma", "Každý 1 formát", "Pouze angličtina", "1-5 bank", "Bez údržby"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 jednorázově", "11 formátů, 120+ bank", "68 jazyků, 70+ měn", "100% offline, nula API volání", "Aktivně udržován"]
+  },
+  "formats": {
+    "heading": "11 Formátů. Jedno API.",
+    "items": {"csv": "120+ bankovních konfigurací", "ofx": "1.x SGML + 2.x XML", "pdf": "Text + OCR (68 jazyků)", "qif": "Quicken Interchange", "mt940": "SWIFT výpisy", "camt": "ISO 20022 (052/053/054)"}
+  },
+  "features": {
+    "heading": "Vše, Co Potřebujete",
+    "items": [
+      {"title": "120+ Bank", "desc": "Předkonfigurováno pro banky v Severní Americe, EU, Spojeném království, Austrálii a Asii. Přidejte svou vlastní za běhu."},
+      {"title": "100% Offline", "desc": "Nula síťových volání. Žádné API klíče. Žádný cloud. Data nikdy neopustí zařízení."},
+      {"title": "68 Jazyků", "desc": "OCR + parsování dat v němčině, francouzštině, japonštině, arabštině, hindštině, thajštině a dalších. 70+ měn."},
+      {"title": "OCR Účtenek", "desc": "Extrahujte obchodníka, celkovou částku, daň, spropitné a položky z fotografií účtenek."},
+      {"title": "Export Formátů", "desc": "Převádějte mezi CSV, OFX, QIF, JSON. Parsujte jakýkoli formát, exportujte do jakéhokoli jiného."},
+      {"title": "CLI Nástroj", "desc": "npx statementkit parse statement.csv — bezobslužné parsování pro CI/skripty."}
+    ]
+  },
+  "codeExamples": {"heading": "Jednoduché API"},
+  "pricing": {
+    "heading": "Jedna Cena. Doživotní Přístup.",
+    "subtitle": "Žádné předplatné. Žádné poplatky za API volání. Žádné uzamčení u dodavatele.",
+    "price": "$79",
+    "priceLabel": "jednorázová platba",
+    "items": ["Kompletní zdrojový kód (TypeScript)", "120+ bankovních konfigurací v 6 regionech", "11 vstupních formátů + 4 exportní formáty", "PDF OCR (68 jazyků)", "OCR fotografií účtenek", "CLI nástroj + hromadný import", "Rozhraní AI poskytovatele (BYOK)", "432 testů prochází", "Doživotní aktualizace přes GitHub", "MIT licence — použijte v jakémkoli projektu"],
+    "cta": "Kupte StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Často Kladené Otázky",
+    "items": [
+      {"q": "Co dostanu?", "a": "Kompletní zdrojový kód TypeScript doručený přes přístup k GitHub repozitáři. 120+ bankovních parserů, 11 obsluh formátů, PDF OCR, CLI nástroj a rozhraní AI poskytovatele. MIT licence — použijte v jakémkoli projektu, komerčním nebo osobním."},
+      {"q": "Jak funguje offline parsování?", "a": "Veškeré parsování běží lokálně — CSV, OFX, QIF, MT940 a CAMT parsování nevyžaduje žádná síťová volání. PDF OCR používá Tesseract.js, který běží v prohlížeči nebo Node.js. Žádná data nikdy neopustí vaši infrastrukturu."},
+      {"q": "Mohu přidat svou vlastní banku?", "a": "Ano. Použijte registerBank() za běhu, načtěte z JSON konfiguračních souborů nebo použijte CLI příkaz config suggest pro automatickou detekci sloupců ze vzorového CSV."},
+      {"q": "Co AI funkce?", "a": "AI je 100% volitelný. Veškeré parsování funguje bez něj. Pokud chcete chytrou detekci duplikátů nebo obohacení dat o obchodníkovi, přineste svůj vlastní API klíč (OpenAI, Anthropic nebo jakýkoli LLM) přes rozhraní AIProvider."},
+      {"q": "Existuje bezplatná zkušební verze?", "a": "Základní parsery jsou dostupné jako open-source npm balíček. Pro verze ($79) přidává PDF OCR, podporu CAMT/MT940, CLI nástroj, AI rozhraní a prioritní bankovní konfigurace."}
+    ]
+  },
+  "footer": {"builtBy": "Vytvořil"},
+  "languageSelector": {"label": "Překlady vytvořeny pomocí", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Vstup", "parsed": "Zpracováno", "languages": "68 jazyků"}
+}

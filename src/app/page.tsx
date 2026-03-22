@@ -1,6 +1,8 @@
 "use client";
 
 import { FormatSelector } from "@/components/format-selector";
+import { LanguageSelector } from "@/components/language-selector";
+import { useLandingTranslations } from "@/i18n/use-landing-translations";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -31,19 +33,29 @@ const FEATURES = [
 ];
 
 export default function Home() {
+  const { locale, translations: t, changeLocale, loading, dir } = useLandingTranslations();
+
   return (
+    <div dir={dir}>
+    <LanguageSelector
+      locale={locale}
+      onChangeLocale={changeLocale}
+      loading={loading}
+      label={t.languageSelector.label}
+      polyglotLinkText={t.languageSelector.polyglotLink}
+    />
     <FormatSelector />
     <main className="min-h-screen">
       {/* Hero */}
       <section className="relative flex flex-col items-center justify-center px-4 pt-16 pb-20 text-center">
         <Badge className="mb-6 border-emerald-500/20 bg-emerald-500/10 text-emerald-400">
-          Privacy-First Bank Statement Parsing
+          {t.hero.badge}
         </Badge>
 
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight max-w-4xl">
           Parse Any Bank Statement
           <br />
-          <span className="text-gradient">In Any Language</span>
+          <span className="text-gradient">{t.hero.headline2}</span>
         </h1>
 
         <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl">
@@ -60,7 +72,7 @@ export default function Home() {
             href="#pricing"
             className="glow inline-flex h-12 items-center justify-center rounded-lg bg-primary px-8 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80"
           >
-            Get StatementKit &mdash; $79 USD
+            {t.hero.cta.replace("{price}", "$79 USD")}
           </a>
           <a
             href="https://github.com/TomahawkCM/statementkit"
@@ -83,8 +95,7 @@ export default function Home() {
           Why Not Plaid?
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Aggregator APIs cost $30-200K/year, require cloud connectivity, and send your users&apos; data to third-party servers.
-          StatementKit runs entirely on your infrastructure.
+          {t.comparison.subtitle}
         </p>
 
         <div className="grid md:grid-cols-3 gap-6">
@@ -270,8 +281,8 @@ setAIProvider(myProvider);
 
         <Card className="border-emerald-500/30 bg-emerald-500/5 max-w-md mx-auto">
           <CardContent className="pt-8 pb-8">
-            <div className="text-5xl font-bold mb-2">$79</div>
-            <div className="text-muted-foreground mb-6">one-time payment</div>
+            <div className="text-5xl font-bold mb-2">{t.pricing.price}</div>
+            <div className="text-muted-foreground mb-6">{t.pricing.priceLabel}</div>
 
             <ul className="text-left text-sm space-y-3 mb-8 px-4">
               <li className="flex items-start gap-2"><span className="text-emerald-400">&#x2714;</span> Full source code (TypeScript)</li>
@@ -291,7 +302,7 @@ setAIProvider(myProvider);
               href="https://tomahawk-labs.lemonsqueezy.com/checkout/buy/87232575-7fe4-4e40-9414-241eab48fbb7"
               className="glow inline-flex h-12 items-center justify-center rounded-lg bg-primary px-8 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80 w-full"
             >
-              Buy StatementKit &mdash; $79 USD
+              {t.pricing.cta.replace("{price}", "$79 USD")}
             </a>
           </CardContent>
         </Card>
@@ -371,7 +382,7 @@ setAIProvider(myProvider);
       {/* Footer */}
       <footer className="px-4 py-12 text-center text-sm text-muted-foreground">
         <p>
-          Built by{" "}
+          {t.footer.builtBy}{" "}
           <a href="https://github.com/TomahawkCM" className="underline hover:text-foreground">
             TomahawkCM
           </a>
@@ -386,5 +397,6 @@ setAIProvider(myProvider);
         </p>
       </footer>
     </main>
+    </div>
   );
 }

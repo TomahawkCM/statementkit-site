@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "badge": "Yksityisyyttä kunnioittava tiliotejäsennys",
+    "headline1": "Jäsennä mikä tahansa tiliote",
+    "headline2": "Millä tahansa kielellä",
+    "subheadline": "120+ pankkia. 11 muotoa. 68 kieltä. 70+ valuuttaa. Yksi SDK. Ei ulkoisia palveluita. 100% offline.",
+    "cta": "Hanki StatementKit — {price}",
+    "ctaSecondary": "Katso GitHubissa",
+    "installComment": "# Asennus",
+    "callout": "Kertamaksu — ei tilauksia, ei API-kutsumaksuja"
+  },
+  "comparison": {
+    "heading": "Miksi ei Plaid?",
+    "subtitle": "Aggregaattori-API:t maksavat $30-200K/vuosi, vaativat pilviyhteyttä ja lähettävät käyttäjiesi tiedot kolmannen osapuolen palvelimille. StatementKit toimii kokonaan omassa infrastruktuurissasi.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/vuosi", "Pilviriippuvainen", "Käyttäjätiedot lähetetään kolmannelle osapuolelle", "Yhteyskohtainen hinnoittelu", "API-rajoitukset"],
+    "ossTitle": "Avoimen lähdekoodin jäsentäjät",
+    "ossItems": ["Ilmainen", "1 muoto kukin", "Vain englanti", "1-5 pankkia", "Ei ylläpitoa"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 kertamaksu", "11 muotoa, 120+ pankkia", "68 kieltä, 70+ valuuttaa", "100% offline, ei API-kutsuja", "Aktiivisesti ylläpidetty"]
+  },
+  "formats": {
+    "heading": "11 muotoa. Yksi API.",
+    "items": {
+      "csv": "120+ pankkikonfiguraatiota",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "Teksti + OCR (68 kieltä)",
+      "qif": "Quicken Interchange",
+      "mt940": "SWIFT-tiliotteet",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "Kaikki mitä tarvitset",
+    "items": [
+      {"title": "120+ pankkia", "desc": "Esikonfiguroitu pankeille Pohjois-Amerikassa, EU:ssa, UK:ssa, AU:ssa, Aasiassa. Lisää omasi ajonaikaisesti."},
+      {"title": "100% offline", "desc": "Ei verkkokutsuja. Ei API-avaimia. Ei pilveä. Data ei koskaan poistu laitteesta."},
+      {"title": "68 kieltä", "desc": "OCR + päivämääräjäsennys saksaksi, ranskaksi, japaniksi, arabiaksi, hindiksi, thaiksi ja muilla. 70+ valuuttaa."},
+      {"title": "Kuitti-OCR", "desc": "Tunnista kauppias, summa, vero, tippi ja rivitiedot kuittikuvista."},
+      {"title": "Muotovienti", "desc": "Muunna CSV:n, OFX:n, QIF:n ja JSON:n välillä. Jäsennä mikä tahansa muoto, vie mihin tahansa toiseen."},
+      {"title": "CLI-työkalu", "desc": "npx statementkit parse statement.csv — päätön jäsennys CI:lle/skripteille."}
+    ]
+  },
+  "codeExamples": {"heading": "Yksinkertainen API"},
+  "pricing": {
+    "heading": "Yksi hinta. Elinikäinen pääsy.",
+    "subtitle": "Ei tilauksia. Ei API-kutsumaksuja. Ei toimittajalukkoa.",
+    "price": "$79",
+    "priceLabel": "kertamaksu",
+    "items": [
+      "Täysi lähdekoodi (TypeScript)",
+      "120+ pankkikonfiguraatiota 6 alueella",
+      "11 syötemuotoa + 4 vientimuotoa",
+      "PDF OCR (68 kieltä)",
+      "Kuittikuva-OCR",
+      "CLI-työkalu + erätuonti",
+      "AI-tarjoajarajapinta (BYOK)",
+      "432 testiä läpäisty",
+      "Elinikäiset päivitykset GitHubin kautta",
+      "MIT-lisenssi — käytä missä tahansa projektissa"
+    ],
+    "cta": "Osta StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Usein kysytyt kysymykset",
+    "items": [
+      {"q": "Mitä saan?", "a": "Täysi TypeScript-lähdekoodi toimitetaan GitHub-repositorion käyttöoikeuden kautta. 120+ pankkijäsentäjää, 11 muotokäsittelijää, PDF OCR, CLI-työkalu ja AI-tarjoajarajapinta. MIT-lisensoitu — käytä missä tahansa projektissa, kaupallisessa tai henkilökohtaisessa."},
+      {"q": "Miten offline-jäsennys toimii?", "a": "Kaikki jäsennys tapahtuu paikallisesti — CSV, OFX, QIF, MT940 ja CAMT-jäsennys ei vaadi verkkokutsuja. PDF OCR käyttää Tesseract.js:ää, joka toimii selaimessa tai Node.js:ssä. Data ei koskaan poistu infrastruktuuristasi."},
+      {"q": "Voinko lisätä oman pankkini?", "a": "Kyllä. Käytä registerBank()-funktiota ajonaikaisesti, lataa JSON-konfiguraatiotiedostoista tai käytä CLI config suggest -komentoa tunnistamaan sarakkeet automaattisesti näyte-CSV:stä."},
+      {"q": "Entä AI-ominaisuudet?", "a": "AI on 100% valinnainen. Kaikki jäsennys toimii ilman sitä. Jos haluat älykkään duplikaattien tunnistuksen tai kauppiaan rikastuksen, tuo oma API-avaimesi (OpenAI, Anthropic tai mikä tahansa LLM) AIProvider-rajapinnan kautta."},
+      {"q": "Onko ilmainen kokeilu?", "a": "Perusjäsentäjät ovat saatavilla avoimen lähdekoodin npm-pakettina. Pro-versio ($79) lisää PDF OCR:n, CAMT/MT940-tuen, CLI-työkalun, AI-rajapinnan ja prioriteettipankkikonfiguraatiot."}
+    ]
+  },
+  "footer": {"builtBy": "Tekijä"},
+  "languageSelector": {"label": "Käännökset tehty käyttäen", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Syöte", "parsed": "Jäsennetty", "languages": "68 kieltä"}
+}

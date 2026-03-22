@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "badge": "Privacy-First na Pag-parse ng Bank Statement",
+    "headline1": "I-parse ang Kahit Anong Bank Statement",
+    "headline2": "Sa Kahit Anong Wika",
+    "subheadline": "120+ bangko. 11 format. 68 wika. 70+ pera. Isang SDK. Zero panlabas na serbisyo. 100% offline.",
+    "cta": "Kunin ang StatementKit — {price}",
+    "ctaSecondary": "Tingnan sa GitHub",
+    "installComment": "# I-install",
+    "callout": "Isang beses na bayad — walang subscription, walang bayad sa bawat API call"
+  },
+  "comparison": {
+    "heading": "Bakit Hindi Plaid?",
+    "subtitle": "Ang mga aggregator API ay nagkakahalaga ng $30-200K/taon, nangangailangan ng cloud connectivity, at ipinapadala ang data ng iyong mga user sa third-party na server. Ang StatementKit ay tumatakbo nang buong-buo sa iyong infrastructure.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/taon", "Cloud-dependent", "Ipinapadala ang user data sa 3rd party", "Per-connection na presyo", "Mga limitasyon sa API"],
+    "ossTitle": "Open-Source na mga Parser",
+    "ossItems": ["Libre", "1 format bawat isa", "English lang", "1-5 bangko", "Walang maintenance"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 isang beses", "11 format, 120+ bangko", "68 wika, 70+ pera", "100% offline, zero API call", "Aktibong minemementena"]
+  },
+  "formats": {
+    "heading": "11 Format. Isang API.",
+    "items": {
+      "csv": "120+ bank config",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "Text + OCR (68 wika)",
+      "qif": "Quicken Interchange",
+      "mt940": "SWIFT statement",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "Lahat ng Kailangan Mo",
+    "items": [
+      {"title": "120+ Bangko", "desc": "Pre-configured para sa mga bangko sa NA, EU, UK, AU, Asia. Magdagdag ng sarili mo sa runtime."},
+      {"title": "100% Offline", "desc": "Zero network call. Walang API key. Walang cloud. Hindi umaalis ang data sa device."},
+      {"title": "68 Wika", "desc": "OCR + date parsing sa German, French, Japanese, Arabic, Hindi, Thai at iba pa. 70+ pera."},
+      {"title": "Receipt OCR", "desc": "I-extract ang merchant, total, tax, tip, at mga line item mula sa receipt photo."},
+      {"title": "Format Export", "desc": "Mag-convert sa pagitan ng CSV, OFX, QIF, JSON. I-parse ang kahit anong format, i-export sa iba."},
+      {"title": "CLI Tool", "desc": "npx statementkit parse statement.csv — headless parsing para sa CI/scripts."}
+    ]
+  },
+  "codeExamples": {"heading": "Simpleng API"},
+  "pricing": {
+    "heading": "Isang Presyo. Lifetime Access.",
+    "subtitle": "Walang subscription. Walang bayad sa bawat API call. Walang vendor lock-in.",
+    "price": "$79",
+    "priceLabel": "isang beses na bayad",
+    "items": [
+      "Buong source code (TypeScript)",
+      "120+ bank config sa 6 na rehiyon",
+      "11 input format + 4 export format",
+      "PDF OCR (68 wika)",
+      "Receipt photo OCR",
+      "CLI tool + batch import",
+      "AI provider interface (BYOK)",
+      "432 test na pumasa",
+      "Lifetime update sa pamamagitan ng GitHub",
+      "MIT license — gamitin sa kahit anong proyekto"
+    ],
+    "cta": "Bilhin ang StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Mga Madalas Itanong",
+    "items": [
+      {"q": "Ano ang makukuha ko?", "a": "Buong TypeScript source code na naide-deliver sa pamamagitan ng GitHub repo access. 120+ bank parser, 11 format handler, PDF OCR, CLI tool, at AI provider interface. MIT licensed — gamitin sa kahit anong proyekto, komersyal o personal."},
+      {"q": "Paano gumagana ang offline parsing?", "a": "Lahat ng parsing ay lokal — ang CSV, OFX, QIF, MT940, at CAMT parsing ay hindi nangangailangan ng network call. Ang PDF OCR ay gumagamit ng Tesseract.js na tumatakbo sa browser o Node.js. Walang data na umaalis sa iyong infrastructure."},
+      {"q": "Maaari ba akong magdagdag ng sarili kong bangko?", "a": "Oo. Gamitin ang registerBank() sa runtime, mag-load mula sa JSON config file, o gamitin ang CLI config suggest command para auto-detect ang mga column mula sa sample CSV."},
+      {"q": "Kumusta ang mga AI feature?", "a": "Ang AI ay 100% optional. Lahat ng parsing ay gumagana nang wala ito. Kung gusto mo ng smart duplicate detection o merchant enrichment, dalhin ang sarili mong API key (OpenAI, Anthropic, o kahit anong LLM) sa pamamagitan ng AIProvider interface."},
+      {"q": "May libreng trial ba?", "a": "Ang mga core parser ay available bilang open-source npm package. Ang Pro version ($79) ay nagdadagdag ng PDF OCR, CAMT/MT940 support, CLI tool, AI interface, at priority bank config."}
+    ]
+  },
+  "footer": {"builtBy": "Ginawa ni"},
+  "languageSelector": {"label": "Mga pagsasalin na ginawa gamit ang", "polyglotLink": "Polyglot Kit"},
+  "demo": {"input": "Input", "parsed": "Na-parse", "languages": "68 wika"}
+}
