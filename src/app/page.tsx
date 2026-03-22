@@ -8,7 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const FORMATS = [
   { name: "CSV", desc: "120+ bank configs", icon: "\uD83D\uDCCA" },
   { name: "OFX/QFX", desc: "1.x SGML + 2.x XML", icon: "\uD83C\uDFE6" },
-  { name: "PDF", desc: "Text + OCR (60+ langs)", icon: "\uD83D\uDCC4" },
+  { name: "PDF", desc: "Text + OCR (68 langs)", icon: "\uD83D\uDCC4" },
   { name: "QIF", desc: "Quicken Interchange", icon: "\uD83D\uDCBE" },
   { name: "MT940/942", desc: "SWIFT statements", icon: "\uD83C\uDF0D" },
   { name: "CAMT", desc: "ISO 20022 (052/053/054)", icon: "\uD83C\uDDEA\uD83C\uDDFA" },
@@ -17,7 +17,7 @@ const FORMATS = [
 const FEATURES = [
   { title: "120+ Banks", desc: "Pre-configured for banks across NA, EU, UK, AU, Asia. Add your own at runtime.", icon: "\uD83C\uDFDB\uFE0F" },
   { title: "100% Offline", desc: "Zero network calls. No API keys. No cloud. Data never leaves the device.", icon: "\uD83D\uDD12" },
-  { title: "17 Languages", desc: "Dates in German, French, Japanese, Arabic, Chinese & more. 70+ currency symbols.", icon: "\uD83C\uDF10" },
+  { title: "68 Languages", desc: "Dates in German, French, Japanese, Arabic, Chinese & more. 70+ currency symbols.", icon: "\uD83C\uDF10" },
   { title: "Receipt OCR", desc: "Extract merchant, total, tax, tip, and line items from receipt photos.", icon: "\uD83E\uDDFE" },
   { title: "Format Export", desc: "Convert between CSV, OFX, QIF, JSON. Parse any format, export to any other.", icon: "\uD83D\uDD04" },
   { title: "CLI Tool", desc: "npx statementkit parse statement.csv \u2014 headless parsing for CI/scripts.", icon: "\u2328\uFE0F" },
@@ -39,7 +39,7 @@ export default function Home() {
         </h1>
 
         <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl">
-          120+ banks. 11 formats. 17 languages. 70+ currencies.
+          120+ banks. 11 formats. 68 languages. 70+ currencies.
           One SDK. Zero external services. 100% offline.
         </p>
 
@@ -105,7 +105,7 @@ export default function Home() {
             <CardContent className="text-sm space-y-2">
               <p className="flex items-start gap-2"><span className="text-emerald-400">&#x2714;</span> $79 one-time</p>
               <p className="flex items-start gap-2"><span className="text-emerald-400">&#x2714;</span> 11 formats, 120+ banks</p>
-              <p className="flex items-start gap-2"><span className="text-emerald-400">&#x2714;</span> 17 languages, 70+ currencies</p>
+              <p className="flex items-start gap-2"><span className="text-emerald-400">&#x2714;</span> 68 languages, 70+ currencies</p>
               <p className="flex items-start gap-2"><span className="text-emerald-400">&#x2714;</span> 100% offline, zero API calls</p>
               <p className="flex items-start gap-2"><span className="text-emerald-400">&#x2714;</span> Actively maintained</p>
             </CardContent>
@@ -195,10 +195,10 @@ console.log(data.accountInfo);   // { BANKID, ACCTID, ACCTTYPE }`}</code>
 
           <TabsContent value="detect">
             <pre className="bg-muted/50 rounded-lg p-6 text-sm overflow-x-auto border">
-              <code>{`import { detectFileFormat, detectBankWithConfidence }
-  from 'statementkit/detection';
+              <code>{`import { detectFromContent, detectBankWithConfidence }
+  from 'statementkit';
 
-const format = detectFileFormat(content);
+const format = detectFromContent(content);
 // { format: "csv", confidence: 0.95 }
 
 const bank = detectBankWithConfidence(headers);
@@ -208,7 +208,7 @@ const bank = detectBankWithConfidence(headers);
 
           <TabsContent value="intl">
             <pre className="bg-muted/50 rounded-lg p-6 text-sm overflow-x-auto border">
-              <code>{`import { parseAmount, parseDate } from 'statementkit/intl';
+              <code>{`import { parseAmount, parseDate } from 'statementkit';
 
 parseAmount('1.234,56', 'de-DE');    // 1234.56
 parseAmount('1,23,456.78', 'hi-IN'); // 123456.78
@@ -239,12 +239,12 @@ parseDate('2026\u5E741\u670815\u65E5', 'zh');     // Date(2026-01-15)`}</code>
               <li className="flex items-start gap-2"><span className="text-emerald-400">&#x2714;</span> Full source code (TypeScript)</li>
               <li className="flex items-start gap-2"><span className="text-emerald-400">&#x2714;</span> 120+ bank configs across 6 regions</li>
               <li className="flex items-start gap-2"><span className="text-emerald-400">&#x2714;</span> 11 input formats + 4 export formats</li>
-              <li className="flex items-start gap-2"><span className="text-emerald-400">&#x2714;</span> PDF OCR (60+ languages)</li>
+              <li className="flex items-start gap-2"><span className="text-emerald-400">&#x2714;</span> PDF OCR (68 languages)</li>
               <li className="flex items-start gap-2"><span className="text-emerald-400">&#x2714;</span> Receipt photo OCR</li>
               <li className="flex items-start gap-2"><span className="text-emerald-400">&#x2714;</span> CLI tool + batch import</li>
               <li className="flex items-start gap-2"><span className="text-emerald-400">&#x2714;</span> AI provider interface (BYOK)</li>
               <li className="flex items-start gap-2"><span className="text-emerald-400">&#x2714;</span> Webhook notifications</li>
-              <li className="flex items-start gap-2"><span className="text-emerald-400">&#x2714;</span> 266 tests passing</li>
+              <li className="flex items-start gap-2"><span className="text-emerald-400">&#x2714;</span> 432 tests passing</li>
               <li className="flex items-start gap-2"><span className="text-emerald-400">&#x2714;</span> Lifetime updates via GitHub</li>
               <li className="flex items-start gap-2"><span className="text-emerald-400">&#x2714;</span> MIT license &mdash; use in any project</li>
             </ul>
