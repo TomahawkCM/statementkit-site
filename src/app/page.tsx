@@ -250,7 +250,7 @@ parseDate('2026\u5E741\u670815\u65E5', 'zh');     // Date(2026-01-15)`}</code>
             </ul>
 
             <a
-              href="https://tomahawk-labs.lemonsqueezy.com/checkout/buy/PLACEHOLDER"
+              href="https://tomahawk-labs.lemonsqueezy.com/checkout/buy/87232575-7fe4-4e40-9414-241eab48fbb7"
               className="glow inline-flex h-12 items-center justify-center rounded-lg bg-primary px-8 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/80 w-full"
             >
               Buy StatementKit &mdash; $79 USD
