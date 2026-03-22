@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>polyglot-kit Product Image</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    width: 1280px;
+    height: 720px;
+    background: #09090b;
+    color: #fafafa;
+    font-family: 'Inter', system-ui, sans-serif;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    position: relative;
+  }
+
+  /* Subtle gradient background */
+  body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 30% 20%, rgba(99, 102, 241, 0.08) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 80%, rgba(34, 197, 94, 0.05) 0%, transparent 60%);
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    gap: 48px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(99, 102, 241, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    color: #a5b4fc;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    width: fit-content;
+  }
+
+  h1 {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+  }
+
+  h1 span { color: #4ade80; }
+
+  .subtitle {
+    font-size: 16px;
+    color: #a1a1aa;
+    line-height: 1.5;
+    margin-bottom: 28px;
+    max-width: 420px;
+  }
+
+  .stats {
+    display: flex;
+    gap: 32px;
+  }
+
+  .stat {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stat-value {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'JetBrains Mono', monospace;
+    color: #4ade80;
+  }
+
+  .stat-label {
+    font-size: 12px;
+    color: #71717a;
+    margin-top: 2px;
+  }
+
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .code-block {
+    background: #111113;
+    border: 1px solid #27272a;
+    border-radius: 10px;
+    padding: 16px 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .code-block .comment { color: #52525b; }
+  .code-block .keyword { color: #c084fc; }
+  .code-block .string { color: #fbbf24; }
+  .code-block .fn { color: #60a5fa; }
+  .code-block .result { color: #4ade80; }
+
+  .translations {
+    background: #111113;
+    border: 1px solid #27272a;
+    border-radius: 10px;
+    padding: 16px 20px;
+  }
+
+  .translations h3 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #52525b;
+    margin-bottom: 10px;
+  }
+
+  .trans-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6px 24px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+  }
+
+  .trans-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .trans-key { color: #71717a; }
+  .trans-val { color: #4ade80; }
+
+  .frameworks {
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+  }
+
+  .fw-badge {
+    background: #18181b;
+    border: 1px solid #27272a;
+    color: #a1a1aa;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="badge">Zero Dependencies &middot; TypeScript Strict</div>
+      <h1>
+        <span>113</span> locales.<br>
+        <span>206</span> strings.<br>
+        One install.
+      </h1>
+      <p class="subtitle">
+        Drop-in i18n infrastructure with pre-translated UI strings,
+        locale-aware formatting, and framework adapters.
+      </p>
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-value">113</span>
+          <span class="stat-label">Locales</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">206</span>
+          <span class="stat-label">Translated strings</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">0</span>
+          <span class="stat-label">Dependencies</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">11</span>
+          <span class="stat-label">Namespaces</span>
+        </div>
+      </div>
+      <div class="frameworks" style="margin-top: 20px;">
+        <span class="fw-badge">next-intl</span>
+        <span class="fw-badge">react-intl</span>
+        <span class="fw-badge">i18next</span>
+        <span class="fw-badge">vanilla</span>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="code-block">
+        <span class="comment">// Install & use in 3 lines</span><br>
+        <span class="keyword">import</span> { <span class="fn">formatCurrency</span> } <span class="keyword">from</span> <span class="string">"polyglot-kit/formatting"</span>;<br>
+        <span class="keyword">import</span> { <span class="fn">createTranslator</span> } <span class="keyword">from</span> <span class="string">"polyglot-kit/adapters/vanilla"</span>;<br>
+        <br>
+        <span class="fn">formatCurrency</span>(1234.56, <span class="string">"EUR"</span>, <span class="string">"de-DE"</span>);<br>
+        <span class="comment">// </span><span class="result">"1.234,56 &euro;"</span><br>
+        <br>
+        <span class="keyword">const</span> t = <span class="keyword">await</span> <span class="fn">createTranslator</span>(<span class="string">"ja-JP"</span>);<br>
+        t(<span class="string">"common.save"</span>); <span class="comment">// </span><span class="result">"&#20445;&#23384;"</span>
+      </div>
+
+      <div class="translations">
+        <h3>common.save &mdash; across 10 locales</h3>
+        <div class="trans-grid">
+          <div class="trans-item"><span class="trans-key">en-US</span> <span class="trans-val">Save</span></div>
+          <div class="trans-item"><span class="trans-key">fr-FR</span> <span class="trans-val">Enregistrer</span></div>
+          <div class="trans-item"><span class="trans-key">de-DE</span> <span class="trans-val">Speichern</span></div>
+          <div class="trans-item"><span class="trans-key">es-ES</span> <span class="trans-val">Guardar</span></div>
+          <div class="trans-item"><span class="trans-key">ja-JP</span> <span class="trans-val">&#20445;&#23384;</span></div>
+          <div class="trans-item"><span class="trans-key">ar-SA</span> <span class="trans-val">&#1581;&#1601;&#1592;</span></div>
+          <div class="trans-item"><span class="trans-key">pt-BR</span> <span class="trans-val">Salvar</span></div>
+          <div class="trans-item"><span class="trans-key">zh-CN</span> <span class="trans-val">&#20445;&#23384;</span></div>
+          <div class="trans-item"><span class="trans-key">ko-KR</span> <span class="trans-val">&#51200;&#51109;</span></div>
+          <div class="trans-item"><span class="trans-key">hi-IN</span> <span class="trans-val">&#2360;&#2361;&#2375;&#2332;&#2375;&#2306;</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

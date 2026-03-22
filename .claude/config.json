@@ -1,0 +1,14 @@
+{
+  "project": {
+    "initialized": true,
+    "template": "new-project",
+    "version": "1.0.0"
+  },
+  "docker": {
+    "enabled": false,
+    "healthCheck": true
+  },
+  "hooks": {
+    "onSessionStart": true
+  }
+}
