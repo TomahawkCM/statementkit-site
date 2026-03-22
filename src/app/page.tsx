@@ -1,5 +1,6 @@
 "use client";
 
+import { FormatSelector } from "@/components/format-selector";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -31,6 +32,7 @@ const FEATURES = [
 
 export default function Home() {
   return (
+    <FormatSelector />
     <main className="min-h-screen">
       {/* Hero */}
       <section className="relative flex flex-col items-center justify-center px-4 pt-16 pb-20 text-center">
