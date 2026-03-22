@@ -5,7 +5,7 @@ import { Octokit } from "@octokit/rest";
 const WEBHOOK_SECRET = process.env.LEMON_SQUEEZY_WEBHOOK_SECRET!;
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN!;
 const REPO_OWNER = process.env.GITHUB_REPO_OWNER || "TomahawkCM";
-const REPO_NAME = process.env.GITHUB_REPO_NAME || "polyglot-kit";
+const REPO_NAME = process.env.GITHUB_REPO_NAME || "statementkit";
 
 function verifySignature(body: string, signature: string): boolean {
   const hash = crypto

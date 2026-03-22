@@ -4,6 +4,12 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "@/components/ui/accordion";
 
 const FORMATS = [
   { name: "CSV", desc: "120+ bank configs", icon: "\uD83D\uDCCA" },
@@ -161,11 +167,12 @@ export default function Home() {
           Simple API
         </h2>
         <Tabs defaultValue="csv" className="max-w-3xl mx-auto">
-          <TabsList className="grid grid-cols-4 w-full">
+          <TabsList className="grid grid-cols-5 w-full">
             <TabsTrigger value="csv">CSV</TabsTrigger>
             <TabsTrigger value="ofx">OFX</TabsTrigger>
             <TabsTrigger value="detect">Auto-Detect</TabsTrigger>
             <TabsTrigger value="intl">Intl Parsing</TabsTrigger>
+            <TabsTrigger value="ai">AI (BYOK)</TabsTrigger>
           </TabsList>
 
           <TabsContent value="csv">
@@ -216,6 +223,35 @@ parseDate('15. Januar 2026', 'de');  // Date(2026-01-15)
 parseDate('2026\u5E741\u670815\u65E5', 'zh');     // Date(2026-01-15)`}</code>
             </pre>
           </TabsContent>
+
+          <TabsContent value="ai">
+            <pre className="bg-muted/50 rounded-lg p-6 text-sm overflow-x-auto border">
+              <code>{`import { setAIProvider, type AIProvider } from 'statementkit';
+import OpenAI from 'openai';
+
+// Bring Your Own Key — works with any LLM provider
+const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+
+const myProvider: AIProvider = {
+  async chatCompletion(prompt, options) {
+    const res = await openai.chat.completions.create({
+      model: options?.model ?? 'gpt-4o-mini',
+      messages: [
+        { role: 'system', content: options?.systemPrompt ?? 'You are a financial data assistant.' },
+        { role: 'user', content: prompt },
+      ],
+      temperature: options?.temperature ?? 0.1,
+    });
+    return { success: true, data: res.choices[0].message.content ?? '' };
+  }
+};
+
+// Enable AI-powered features (smart dedup, merchant enrichment)
+setAIProvider(myProvider);
+
+// All parsing still works 100% offline without an AI provider`}</code>
+            </pre>
+          </TabsContent>
         </Tabs>
       </section>
 
@@ -257,6 +293,75 @@ parseDate('2026\u5E741\u670815\u65E5', 'zh');     // Date(2026-01-15)`}</code>
             </a>
           </CardContent>
         </Card>
+      </section>
+
+      <Separator />
+
+      {/* FAQ */}
+      <section className="px-4 py-20 max-w-3xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+          Frequently Asked Questions
+        </h2>
+
+        <Accordion>
+          <AccordionItem value="what-do-i-get">
+            <AccordionTrigger className="text-base">What do I get?</AccordionTrigger>
+            <AccordionContent>
+              <p className="text-muted-foreground">
+                Full TypeScript source code delivered via GitHub repo access. 120+ bank parsers, 11 format handlers, PDF OCR, CLI tool, and AI provider interface. MIT licensed &mdash; use in any project, commercial or personal.
+              </p>
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="how-install">
+            <AccordionTrigger className="text-base">How do I install it?</AccordionTrigger>
+            <AccordionContent>
+              <p className="text-muted-foreground">
+                After purchase, you&apos;ll get GitHub collaborator access. Then just run{" "}
+                <code className="rounded bg-muted px-1.5 py-0.5 text-sm font-mono text-emerald-400">npm install statementkit</code>.
+                For PDF OCR support, also install{" "}
+                <code className="rounded bg-muted px-1.5 py-0.5 text-sm font-mono text-emerald-400">pdfjs-dist</code> and{" "}
+                <code className="rounded bg-muted px-1.5 py-0.5 text-sm font-mono text-emerald-400">tesseract.js</code> as optional dependencies.
+              </p>
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="banks-supported">
+            <AccordionTrigger className="text-base">Which banks are supported?</AccordionTrigger>
+            <AccordionContent>
+              <p className="text-muted-foreground">
+                120+ banks across 8 regions: Canada (BMO, TD, RBC, Scotiabank, CIBC, Tangerine...), US (Chase, Bank of America, Wells Fargo, Citi, Capital One...), UK (Barclays, HSBC, Lloyds), EU (N26, Revolut, ING), Australia (CommBank, ANZ, Westpac), Asia (HDFC, DBS, OCBC), SE Asia (Bangkok Bank, GCash, GrabPay), and Japan (Rakuten, Mizuho). You can also add custom banks at runtime.
+              </p>
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="offline">
+            <AccordionTrigger className="text-base">Does it work offline?</AccordionTrigger>
+            <AccordionContent>
+              <p className="text-muted-foreground">
+                Yes &mdash; 100% offline. No API keys, no cloud services, no network calls for parsing. Your users&apos; financial data never leaves their device. The optional AI enrichment feature supports BYOK (bring your own key) if you want smart merchant matching.
+              </p>
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="updates">
+            <AccordionTrigger className="text-base">Do I get updates?</AccordionTrigger>
+            <AccordionContent>
+              <p className="text-muted-foreground">
+                Yes &mdash; lifetime updates via GitHub. New bank configs, format improvements, and bug fixes are pushed regularly.
+              </p>
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="commercial">
+            <AccordionTrigger className="text-base">Can I use it in a commercial product?</AccordionTrigger>
+            <AccordionContent>
+              <p className="text-muted-foreground">
+                Absolutely. MIT license. Use it in SaaS apps, fintech products, internal tools &mdash; no restrictions.
+              </p>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </section>
 
       <Separator />
