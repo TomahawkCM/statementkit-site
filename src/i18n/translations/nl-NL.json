@@ -1,0 +1,88 @@
+{
+  "hero": {
+    "badge": "Privacy-first bankafschriftverwerking",
+    "headline1": "Parse elk bankafschrift",
+    "headline2": "In elke taal",
+    "subheadline": "120+ banken. 11 formaten. 68 talen. 70+ valuta's. Eén SDK. Nul externe diensten. 100% offline.",
+    "cta": "Haal StatementKit — {price}",
+    "ctaSecondary": "Bekijk op GitHub",
+    "installComment": "# Installeren",
+    "callout": "Eenmalige aankoop — geen abonnementen, geen kosten per API-aanroep"
+  },
+  "comparison": {
+    "heading": "Waarom niet Plaid?",
+    "subtitle": "Aggregator-API's kosten $30-200K/jaar, vereisen cloudconnectiviteit en sturen de gegevens van je gebruikers naar servers van derden. StatementKit draait volledig op je eigen infrastructuur.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/jaar", "Cloudafhankelijk", "Gebruikersgegevens naar derden", "Prijs per verbinding", "API-snelheidslimieten"],
+    "ossTitle": "Opensourceparsers",
+    "ossItems": ["Gratis", "Elk 1 formaat", "Alleen Engels", "1-5 banken", "Geen onderhoud"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 eenmalig", "11 formaten, 120+ banken", "68 talen, 70+ valuta's", "100% offline, nul API-aanroepen", "Actief onderhouden"]
+  },
+  "formats": {
+    "heading": "11 formaten. Eén API.",
+    "items": {
+      "csv": "120+ bankconfiguraties",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "Tekst + OCR (68 talen)",
+      "qif": "Quicken Interchange",
+      "mt940": "SWIFT-afschriften",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "Alles wat je nodig hebt",
+    "items": [
+      {"title": "120+ banken", "desc": "Vooraf geconfigureerd voor banken in NA, EU, VK, AU, Azië. Voeg je eigen toe tijdens runtime."},
+      {"title": "100% offline", "desc": "Nul netwerkaanroepen. Geen API-sleutels. Geen cloud. Gegevens verlaten nooit het apparaat."},
+      {"title": "68 talen", "desc": "OCR + datumverwerking in het Duits, Frans, Japans, Arabisch, Hindi, Thai en meer. 70+ valuta's."},
+      {"title": "Kassabon-OCR", "desc": "Haal handelaar, totaal, belasting, fooi en regelitems uit kassabonfoto's."},
+      {"title": "Formaatexport", "desc": "Converteer tussen CSV, OFX, QIF, JSON. Parse elk formaat, exporteer naar elk ander."},
+      {"title": "CLI-tool", "desc": "npx statementkit parse statement.csv — headless parsing voor CI/scripts."}
+    ]
+  },
+  "codeExamples": {
+    "heading": "Eenvoudige API"
+  },
+  "pricing": {
+    "heading": "Eén prijs. Levenslange toegang.",
+    "subtitle": "Geen abonnementen. Geen kosten per API-aanroep. Geen vendorlock-in.",
+    "price": "$79",
+    "priceLabel": "eenmalige betaling",
+    "items": [
+      "Volledige broncode (TypeScript)",
+      "120+ bankconfiguraties in 6 regio's",
+      "11 invoerformaten + 4 exportformaten",
+      "PDF OCR (68 talen)",
+      "Kassabonfoto-OCR",
+      "CLI-tool + batchimport",
+      "AI-providerinterface (BYOK)",
+      "432 tests geslaagd",
+      "Levenslange updates via GitHub",
+      "MIT-licentie — gebruik in elk project"
+    ],
+    "cta": "Koop StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Veelgestelde vragen",
+    "items": [
+      {"q": "Wat krijg ik?", "a": "Volledige TypeScript-broncode geleverd via GitHub-repotoegang. 120+ bankparsers, 11 formaathandlers, PDF OCR, CLI-tool en AI-providerinterface. MIT-licentie — gebruik in elk project, commercieel of persoonlijk."},
+      {"q": "Hoe werkt offline parsing?", "a": "Alle parsing draait lokaal — CSV-, OFX-, QIF-, MT940- en CAMT-parsing heeft nul netwerkaanroepen nodig. PDF OCR gebruikt Tesseract.js dat in de browser of Node.js draait. Gegevens verlaten nooit je infrastructuur."},
+      {"q": "Kan ik mijn eigen bank toevoegen?", "a": "Ja. Gebruik registerBank() tijdens runtime, laad vanuit JSON-configuratiebestanden, of gebruik het CLI config suggest-commando om kolommen automatisch te detecteren uit een voorbeeld-CSV."},
+      {"q": "Hoe zit het met AI-functies?", "a": "AI is 100% optioneel. Alle parsing werkt zonder. Wil je slimme duplicaatdetectie of handelaarverrijking, breng dan je eigen API-sleutel mee (OpenAI, Anthropic, of elke LLM) via de AIProvider-interface."},
+      {"q": "Is er een gratis proefversie?", "a": "De kernparsers zijn beschikbaar als een opensource npm-pakket. De Pro-versie ($79) voegt PDF OCR, CAMT/MT940-ondersteuning, CLI-tool, AI-interface en prioriteitsbankconfiguraties toe."}
+    ]
+  },
+  "footer": {
+    "builtBy": "Gebouwd door"
+  },
+  "languageSelector": {
+    "label": "Vertalingen gemaakt met",
+    "polyglotLink": "Polyglot Kit"
+  },
+  "demo": {
+    "input": "Invoer",
+    "parsed": "Geparsed",
+    "languages": "68 talen"
+  }
+}

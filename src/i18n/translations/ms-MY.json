@@ -1,0 +1,88 @@
+{
+  "hero": {
+    "badge": "Penghuraian Penyata Bank Mengutamakan Privasi",
+    "headline1": "Huraikan Sebarang Penyata Bank",
+    "headline2": "Dalam Sebarang Bahasa",
+    "subheadline": "120+ bank. 11 format. 68 bahasa. 70+ mata wang. Satu SDK. Sifar perkhidmatan luaran. 100% luar talian.",
+    "cta": "Dapatkan StatementKit — {price}",
+    "ctaSecondary": "Lihat di GitHub",
+    "installComment": "# Pasang",
+    "callout": "Pembelian sekali — tiada langganan, tiada bayaran per panggilan API"
+  },
+  "comparison": {
+    "heading": "Mengapa Bukan Plaid?",
+    "subtitle": "API agregator berharga $30-200K/tahun, memerlukan sambungan awan, dan menghantar data pengguna anda ke pelayan pihak ketiga. StatementKit berjalan sepenuhnya pada infrastruktur anda.",
+    "plaidTitle": "Plaid / Yodlee",
+    "plaidItems": ["$30-200K/tahun", "Bergantung pada awan", "Data pengguna dihantar ke pihak ketiga", "Harga per sambungan", "Had kadar API"],
+    "ossTitle": "Penghurai Sumber Terbuka",
+    "ossItems": ["Percuma", "Setiap satu 1 format", "Bahasa Inggeris sahaja", "1-5 bank", "Tiada penyelenggaraan"],
+    "skTitle": "StatementKit",
+    "skItems": ["$79 sekali", "11 format, 120+ bank", "68 bahasa, 70+ mata wang", "100% luar talian, sifar panggilan API", "Diselenggara secara aktif"]
+  },
+  "formats": {
+    "heading": "11 Format. Satu API.",
+    "items": {
+      "csv": "120+ konfigurasi bank",
+      "ofx": "1.x SGML + 2.x XML",
+      "pdf": "Teks + OCR (68 bahasa)",
+      "qif": "Quicken Interchange",
+      "mt940": "Penyata SWIFT",
+      "camt": "ISO 20022 (052/053/054)"
+    }
+  },
+  "features": {
+    "heading": "Semua yang Anda Perlukan",
+    "items": [
+      {"title": "120+ Bank", "desc": "Pra-konfigurasi untuk bank di NA, EU, UK, AU, Asia. Tambah sendiri pada masa jalan."},
+      {"title": "100% Luar Talian", "desc": "Sifar panggilan rangkaian. Tiada kunci API. Tiada awan. Data tidak pernah meninggalkan peranti."},
+      {"title": "68 Bahasa", "desc": "OCR + penghuraian tarikh dalam Jerman, Perancis, Jepun, Arab, Hindi, Thai & lagi. 70+ mata wang."},
+      {"title": "OCR Resit", "desc": "Ekstrak pedagang, jumlah, cukai, tip, dan item baris dari foto resit."},
+      {"title": "Eksport Format", "desc": "Tukar antara CSV, OFX, QIF, JSON. Huraikan sebarang format, eksport ke mana-mana."},
+      {"title": "Alat CLI", "desc": "npx statementkit parse statement.csv — penghuraian tanpa kepala untuk CI/skrip."}
+    ]
+  },
+  "codeExamples": {
+    "heading": "API Mudah"
+  },
+  "pricing": {
+    "heading": "Satu Harga. Akses Seumur Hidup.",
+    "subtitle": "Tiada langganan. Tiada bayaran per panggilan API. Tiada penguncian vendor.",
+    "price": "$79",
+    "priceLabel": "bayaran sekali",
+    "items": [
+      "Kod sumber penuh (TypeScript)",
+      "120+ konfigurasi bank di 6 wilayah",
+      "11 format input + 4 format eksport",
+      "PDF OCR (68 bahasa)",
+      "OCR foto resit",
+      "Alat CLI + import kelompok",
+      "Antara muka penyedia AI (BYOK)",
+      "432 ujian lulus",
+      "Kemas kini seumur hidup melalui GitHub",
+      "Lesen MIT — guna dalam sebarang projek"
+    ],
+    "cta": "Beli StatementKit — {price}"
+  },
+  "faq": {
+    "heading": "Soalan Lazim",
+    "items": [
+      {"q": "Apa yang saya dapat?", "a": "Kod sumber TypeScript penuh dihantar melalui akses repo GitHub. 120+ penghurai bank, 11 pengendali format, PDF OCR, alat CLI, dan antara muka penyedia AI. Berlesen MIT — guna dalam sebarang projek, komersial atau peribadi."},
+      {"q": "Bagaimana penghuraian luar talian berfungsi?", "a": "Semua penghuraian berjalan secara tempatan — penghuraian CSV, OFX, QIF, MT940, dan CAMT tidak memerlukan panggilan rangkaian. PDF OCR menggunakan Tesseract.js yang berjalan dalam pelayar atau Node.js. Data tidak pernah meninggalkan infrastruktur anda."},
+      {"q": "Bolehkah saya menambah bank saya sendiri?", "a": "Ya. Guna registerBank() pada masa jalan, muat dari fail konfigurasi JSON, atau guna arahan CLI config suggest untuk mengesan lajur secara automatik dari sampel CSV."},
+      {"q": "Bagaimana dengan ciri AI?", "a": "AI 100% pilihan. Semua penghuraian berfungsi tanpanya. Jika anda mahu pengesanan pendua pintar atau pengayaan pedagang, bawa kunci API anda sendiri (OpenAI, Anthropic, atau mana-mana LLM) melalui antara muka AIProvider."},
+      {"q": "Ada percubaan percuma?", "a": "Penghurai teras tersedia sebagai pakej npm sumber terbuka. Versi Pro ($79) menambah PDF OCR, sokongan CAMT/MT940, alat CLI, antara muka AI, dan konfigurasi bank keutamaan."}
+    ]
+  },
+  "footer": {
+    "builtBy": "Dibina oleh"
+  },
+  "languageSelector": {
+    "label": "Terjemahan dibina dengan",
+    "polyglotLink": "Polyglot Kit"
+  },
+  "demo": {
+    "input": "Input",
+    "parsed": "Dihuraikan",
+    "languages": "68 bahasa"
+  }
+}
